@@ -1,8 +1,8 @@
 ---
 title: border-radius
 name: border-radius
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -87,7 +87,7 @@ selector {
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠Самый крутой лайфхак — это круглые элементы при помощи `border-radius`. Они часто нужны для всяких лейблов на странице.
 
@@ -116,4 +116,4 @@ CSS
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

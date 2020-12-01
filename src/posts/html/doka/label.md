@@ -1,10 +1,10 @@
 ---
 title: <label>
 name: label
-autor: ezhkov_d
-co-autors:
+author: ezhkov_d
+co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - лейбл
   - подпись поля ввода
@@ -45,12 +45,19 @@ summary:
 1. Задаём элементу формы атрибут `id`. Такое же значение задаём атрибуту `for` тега `<label>`.
 2. Оборачиваем элемент формы в тег `<label>`. В этом случае связь создаётся автоматически и нет необходимости в атрибутах `id` и `for`.
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="ezhkov" data-slug-hash="KKMMdXq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="&amp;lt;label&amp;gt;">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/KKMMdXq">
-  &lt;label&gt;</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+```html
+<form action="">
+  <label for="phone">Ваш телефон:</label>
+  <input type="tel" name="phone" id="phone" class="input" />
+
+  <label>
+    <input type="checkbox" name="agree" class="checkbox" />Согласен на обработку
+    данных
+  </label>
+</form>
+```
+
+{% demo "/label/", "Див с фоном", 320 %}
 
 ## Атрибуты
 
@@ -70,10 +77,10 @@ summary:
 
 🛠 Обязательно связывайте `<label>` с чекбоксами и радио-кнопками. Это небольшие элементы интерфейса, в которые довольно сложно попасть курсором мыши или пальцем на мобильных устройствах. Если у них есть связанный `<label>`, то пользователь может кликать по тексту подписи, а не целиться в сам чекбокс. Любите своих пользователей! 😉
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠 Даже если дизайнер нарисовал форму, в которой не предусмотрены явные лейблы для элементов, то вам нужно всё равно прописать их в разметке и скрыть через стили. В этом случае их будет не видно, но скринридер их прочитает.
 
 🛠 При нажатии на лейблу, связанную с полем ввода или другим элементом формы, фокус будет перемещён на этот элемент.
 
-{% include "autors/ezhkov_d/autor.njk" %}
+{% include "authors/ezhkov_d/author.njk" %}

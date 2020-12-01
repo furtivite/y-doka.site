@@ -1,8 +1,8 @@
 ---
 title: DOM
 name: dom
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:
@@ -95,7 +95,7 @@ _У любого узла есть один родительский узел и
 
 ## В работе
 
-{% include "autors/n_lopin/in-work.njk" %}
+{% include "authors/n_lopin/in-work.njk" %}
 
 🛠Напрямую с DOM работают редко. Обычно работают на [уровне элементов](/posts/js/doka/element/).
 
@@ -108,4 +108,4 @@ let lastLi = ulElement.querySelector("li:last-child") // среди потомк
 lastLi.style.color = "red" // поменяли цвет шрифта
 ```
 
-{% include "autors/n_lopin/autor.njk" %}
+{% include "authors/n_lopin/author.njk" %}

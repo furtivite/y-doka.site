@@ -1,8 +1,8 @@
 ---
 title: JSON
 name: json
-autor: stegur
-co-autors:
+author: stegur
+co-authors:
 designers:
 contributors:
 summary:

@@ -1,8 +1,8 @@
 ---
 title: Элемент
 name: element
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:
@@ -102,7 +102,7 @@ divElement.innerHTML = "<p>I was added from JavaScript</p>" // после вып
 
 ## В работе
 
-{% include "autors/n_lopin/in-work.njk" %}
+{% include "authors/n_lopin/in-work.njk" %}
 
 🛠Если нужно добавить текст в элемент, то всегда используй свойство `textContent`. Другие свойства обрабатывают HTML, это может привести к дырам в безопасности.
 
@@ -134,4 +134,4 @@ let element = document.querySelector("#some-element") // <-- удаляемый 
 element.parentNode.removeChild(element)
 ```
 
-{% include "autors/n_lopin/autor.njk" %}
+{% include "authors/n_lopin/author.njk" %}

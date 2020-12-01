@@ -1,8 +1,8 @@
 ---
 title: Element. Keydown/Keyup
 name: element-keydown-keyup
-autor: stegur
-co-autors:
+author: stegur
+co-authors:
 designers:
 contributors:
 summary:

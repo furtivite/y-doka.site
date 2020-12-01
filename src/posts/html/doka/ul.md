@@ -1,8 +1,8 @@
 ---
 title: <ul>
 name: ul
-autor: ezhkov_d
-co-autors:
+author: ezhkov_d
+co-authors:
 designers:
 contributors:
 summary:
@@ -95,4 +95,4 @@ summary:
 </ul>
 ```
 
-{% include "autors/ezhkov_d/autor.njk" %}
+{% include "authors/ezhkov_d/author.njk" %}

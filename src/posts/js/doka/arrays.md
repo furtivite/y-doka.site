@@ -1,8 +1,8 @@
 ---
 title: Массивы
 name: arrays
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:
@@ -140,7 +140,7 @@ console.log(episodesPerSeasons.includes(6)) // напечатает true
 
 ## В работе
 
-{% include "autors/n_lopin/in-work.njk" %}
+{% include "authors/n_lopin/in-work.njk" %}
 
 ### 🛠Копирование массива
 
@@ -190,4 +190,4 @@ let [name, breed] = catProfile
 console.log(name) // напечатает Maru
 ```
 
-{% include "autors/n_lopin/autor.njk" %}
+{% include "authors/n_lopin/author.njk" %}

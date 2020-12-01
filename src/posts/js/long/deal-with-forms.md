@@ -1,8 +1,8 @@
 ---
 title: Работа с формами
 name: deal-with-forms
-autor: bespoyasov
-co-autors:
+author: bespoyasov
+co-authors:
 designers:
 contributors:
 summary:

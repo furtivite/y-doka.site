@@ -1,8 +1,8 @@
 ---
 title: Element.style
 name: element-style
-autor: bespoyasov
-co-autors:
+author: bespoyasov
+co-authors:
 designers:
 contributors:
 summary:
@@ -185,4 +185,4 @@ element.style.backgroundColor = null
 element.style.marginTop = "50px"
 ```
 
-{% include "autors/bespoyasov/autor.njk" %}
+{% include "authors/bespoyasov/author.njk" %}

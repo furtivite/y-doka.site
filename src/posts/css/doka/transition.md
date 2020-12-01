@@ -1,8 +1,8 @@
 ---
 title: transition
 name: transition
-autor: ezhkov_d
-co-autors:
+author: ezhkov_d
+co-authors:
 designers:
 contributors:
 summary:
@@ -183,4 +183,4 @@ transition: all 0.5s ease-out;
 
 Если использовать только `visibility`, то скрытие/появление не будет плавным.
 
-{% include "autors/ezhkov_d/autor.njk" %}
+{% include "authors/ezhkov_d/author.njk" %}

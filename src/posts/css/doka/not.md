@@ -1,8 +1,8 @@
 ---
 title: :not
 name: not
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -86,4 +86,4 @@ li:not(:lact-child):not(._active) {
 
 Из последнего: мне нужно было стилизовать все поля ввода, кроме тех, что были скрыты (**иногда в форму добавляют скрытые поля, чтобы отправить вместе с данными пользователя служебные данные**). Вместо того, чтобы писать составной селектор, выбирая отдельные поля или выдумывать отдельный класс только для тех полей, которые видны / не видны, я написала селектор `input:not([hiddent="true"])` и интерпретатор применил нужные мне стили только тем инпутам, у которых нет атрибута `hidden`.
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

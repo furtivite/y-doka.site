@@ -1,8 +1,8 @@
 ---
 title: Браузерное окружение, BOM
 name: bom
-autor: bespoyasov
-co-autors:
+author: bespoyasov
+co-authors:
 designers:
 contributors:
 summary:

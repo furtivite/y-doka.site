@@ -1,8 +1,8 @@
 ---
 title: Array.map
 name: array-map
-autor: windrushfarer
-co-autors:
+author: windrushfarer
+co-authors:
 designers:
 contributors: skorobaeus
 summary:
@@ -125,4 +125,4 @@ const result = nums.map(...).filter(...).map(...)
 
 ---
 
-{% include "autors/windrushfarer/autor.njk" %}
+{% include "authors/windrushfarer/author.njk" %}

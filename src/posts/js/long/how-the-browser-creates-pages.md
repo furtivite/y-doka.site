@@ -1,8 +1,8 @@
 ---
 title: Как браузер рисует страницы
 name: how-the-browser-creates-pages
-autor: bespoyasov
-co-autors:
+author: bespoyasov
+co-authors:
 designers:
 contributors:
 summary:
@@ -330,4 +330,4 @@ window.requestAnimationFrame(animate)
 
 Это сделает тяжёлую анимацию менее рваной.
 
-{% include "autors/bespoyasov/autor.njk" %}
+{% include "authors/bespoyasov/author.njk" %}

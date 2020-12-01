@@ -1,8 +1,8 @@
 ---
 title: background-repeat
 name: background-repeat
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -87,7 +87,7 @@ CSS
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 `background-repeat` — свойство простое. Написано повторять — повторяем фон. Написано не повторять — не повторяем.
 
@@ -124,4 +124,4 @@ CSS
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

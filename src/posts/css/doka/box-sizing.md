@@ -1,8 +1,8 @@
 ---
 title: box-sizing
 name: box-sizing
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -102,7 +102,7 @@ CSS
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠Из-за стандартного механизма расчёта размера элемента многие начинающие разработчики получают не те размеры элемента, которые ожидали. При этом есть два решения:
 
@@ -119,4 +119,4 @@ CSS
 
 Теперь все размеры элементов будут равны тем значениям, что заданы в свойствах `width` / `height`. Так победим 🙌🏻
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

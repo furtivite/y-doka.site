@@ -1,8 +1,8 @@
 ---
 title: Null и undefined
 name: null-undefined
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:

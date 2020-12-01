@@ -1,8 +1,8 @@
 ---
 title: opacity
 name: opacity
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -86,4 +86,4 @@ selector:before {
 
 Если что, это не я вам рассказала 🤫
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

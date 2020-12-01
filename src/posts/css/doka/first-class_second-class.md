@@ -1,8 +1,8 @@
 ---
 title: .first-class .second-class
 name: first-class_second-class
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -83,8 +83,8 @@ CSS
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠Можно перечислять сколько угодно классов, спускаясь ниже и ниже по дереву вложенности элементов, но селекторы с более чем двумя составляющими сложно читать. И если нужен более сложный селектор, то это повод пересмотреть HTML-разметку и проверить её целесообразность.
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

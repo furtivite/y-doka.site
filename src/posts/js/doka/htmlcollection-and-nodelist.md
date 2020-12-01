@@ -1,8 +1,8 @@
 ---
 title: HTMLCollection и NodeList
 name: htmlcollection-and-nodelist
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:
@@ -35,7 +35,7 @@ summary:
 
 ## В работе
 
-{% include "autors/n_lopin/in-work.njk" %}
+{% include "authors/n_lopin/in-work.njk" %}
 
 🛠 Используй индексы для получения отдельных элементов коллекции:
 
@@ -75,4 +75,4 @@ console.log(array.pop())
 
 Такое преобразование обычно не требуется. Подумай, точно ли оно подходит под твою задачу.
 
-{% include "autors/n_lopin/autor.njk" %}
+{% include "authors/n_lopin/author.njk" %}

@@ -1,8 +1,8 @@
 ---
 title: :active
 name: active
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -80,4 +80,4 @@ button:active {
 
 Этот порядок легко запомнить в виде аббревиатуры LVHA.
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

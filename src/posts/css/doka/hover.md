@@ -1,8 +1,8 @@
 ---
 title: :hover
 name: hover
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -66,7 +66,7 @@ li .link:hover {
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠 Пользователь может зайти на ваш сайт не только с ПК, где есть мышка и её можно на что-то навести, но и с планшета или телефона, где мышкой выступает палец, а его нельзя на что-то навести, им можно только кликнуть.
 
@@ -101,4 +101,4 @@ li .link:hover {
 
 Этот порядок легко запомнить в виде аббревиатуры LVHA.
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

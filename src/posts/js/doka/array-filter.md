@@ -1,8 +1,8 @@
 ---
 title: Array.filter
 name: array-filter
-autor: windrushfarer
-co-autors:
+author: windrushfarer
+co-authors:
 designers:
 contributors: skorobaeus
 summary:
@@ -206,4 +206,4 @@ const elements = [0, "", "one", "two", num === 3 && "three", null].filter(
 ) // ['one', 'two', 'three']
 ```
 
-{% include "autors/windrushfarer/autor.njk" %}
+{% include "authors/windrushfarer/author.njk" %}

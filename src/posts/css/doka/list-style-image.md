@@ -1,8 +1,8 @@
 ---
 title: list-style-image
 name: list-style-image
-autor: ezhkov_d
-co-autors:
+author: ezhkov_d
+co-authors:
 designers:
 contributors:
 summary:
@@ -71,4 +71,4 @@ li:hover {
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/ezhkov_d/autor.njk" %}
+{% include "authors/ezhkov_d/author.njk" %}

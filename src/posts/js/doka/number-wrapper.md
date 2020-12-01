@@ -1,8 +1,8 @@
 ---
 title: Number
 name: number-wrapper
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:

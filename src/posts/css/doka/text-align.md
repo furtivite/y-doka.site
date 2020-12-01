@@ -1,8 +1,8 @@
 ---
 title: text-align
 name: text-align
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors: skorobaeus
 summary:
@@ -130,7 +130,7 @@ HTML
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠Свойство `text-align` можно использовать не только для выравнивания текста в строчных элементах, но и для выравнивания строчно-блочных (`inline-block`) элементов внутри родителя.
 
@@ -212,4 +212,4 @@ CSS
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

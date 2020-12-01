@@ -1,8 +1,8 @@
 ---
 title: События
 name: events
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:
@@ -147,7 +147,7 @@ video.addEventListener("click", function (event) {
 
 ## В работе
 
-{% include "autors/n_lopin/in-work.njk" %}
+{% include "authors/n_lopin/in-work.njk" %}
 
 🛠 Всегда подписывайся на события с помощью `addEventListener`, так ты избежишь доработок, когда потребуется повесить несколько обработчиков на одно и то же событие.
 
@@ -164,4 +164,4 @@ window.addEventListener("click", function () {
 
 🛠 Всплытие событий — важный концепт, попробуй с ним поэкспериментировать.
 
-{% include "autors/n_lopin/autor.njk" %}
+{% include "authors/n_lopin/author.njk" %}

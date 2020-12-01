@@ -1,8 +1,8 @@
 ---
 title: Promise. Метод catch
 name: promise-catch
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:

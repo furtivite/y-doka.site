@@ -1,8 +1,8 @@
 ---
 title: Number.isNaN()
 name: number-is-nan
-autor: vindi-r
-co-autors:
+author: vindi-r
+co-authors:
 designers:
 contributors:
 summary:
@@ -37,7 +37,7 @@ Number.isNaN(undefined) //напечатает false
 
 ## В работе
 
-{% include "autors/vindi-r/in-work.njk" %}
+{% include "authors/vindi-r/in-work.njk" %}
 
 🛠При анализе ввода пользователя всегда нужно проверять результаты вычислений, иначе пользователь вместо расчета — например «Итого» в корзине увидит непонятные для себя символы. Вот, к примеру, очень приятная цена ✈️
 
@@ -52,4 +52,4 @@ Number.isNaN(undefined) //напечатает false
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/vindi-r/autor.njk" %}
+{% include "authors/vindi-r/author.njk" %}

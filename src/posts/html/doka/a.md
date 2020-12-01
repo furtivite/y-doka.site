@@ -1,11 +1,11 @@
 ---
 title: <a>
 name: a
-autor: grachev
-co-autors:
+author: grachev
+co-authors:
   - ABatickaya
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - ссылка
   - <a>
@@ -24,12 +24,7 @@ summary:
 <a href="http://www.yandex.ru/">Яндекс</a>
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max-grachev" data-slug-hash="JzogWo" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="&amp;lt;a&amp;gt;">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/JzogWo">
-  &lt;a&gt;</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/a/basic", "Обычная ссылка", 120 %}
 
 ## Как это понять
 
@@ -78,20 +73,15 @@ summary:
 Сделаем так, чтобы ссылка открывалась в новой вкладке браузера:
 
 ```html
-<a href="https://yandex.ru/" target="_blank">
+<a href="https://y-doka.site/" target="_blank">
   <img
-    src="https://avatars.mds.yandex.net/get-bunker/60661/5ec62cb755193c37a6ec19a826b3891780eead2a/orig"
-    alt="Yandex"
+    src="https://y-doka.site/assets/images/posts/a/dogs.png"
+    alt="doka mainpage dog"
   />
 </a>
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max-grachev" data-slug-hash="MxYNyz" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Google.ru link">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/MxYNyz">
-  Google.ru link</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/a/image", "Ссылка на изображении", 220 %}
 
 Сделаем ссылку для отправки письма на почту:
 
@@ -99,16 +89,11 @@ summary:
 <a href="mailto:nowhere@yandex.ru">Отправить сообщение в никуда</a>
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max-grachev" data-slug-hash="OqPKWx" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="mail to nowhere">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/OqPKWx">
-  mail to nowhere</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/a/mail", "Ссылка mailto", 120 %}
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠 На одностраничных сайтах часто создают навигацию по странице в виде меню. Для прокрутки страницы к нужному месту используют так называемые якорные ссылки.
 
@@ -155,4 +140,4 @@ HTML
 </h2>
 ```
 
-{% include "autors/grachev/autor.njk" %}
+{% include "authors/grachev/author.njk" %}

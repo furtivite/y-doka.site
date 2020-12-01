@@ -1,8 +1,8 @@
 ---
 title: fetch
 name: fetch
-autor: windrushfarer
-co-autors:
+author: windrushfarer
+co-authors:
 designers:
 contributors:
 summary:

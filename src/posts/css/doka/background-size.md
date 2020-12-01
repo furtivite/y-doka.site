@@ -1,8 +1,8 @@
 ---
 title: background-size
 name: background-size
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -100,7 +100,7 @@ CSS
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠Если для задания фона используется шорткат `background`, то значение для `background-size` указывается последним, после слэша `/`. Пример: `background: url('example.jpg') no-repeat center / **cover**`
 
@@ -134,4 +134,4 @@ CSS
 
 Попробуй поменять размеры фоновой картинки и посмотреть, как будет меняться фоновый паттерн.
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

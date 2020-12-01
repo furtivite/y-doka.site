@@ -1,8 +1,8 @@
 ---
 title: width
 name: width
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -121,7 +121,7 @@ selector {
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 Свойство `width`, пожалуй, самое часто встречающееся свойство в коде. В работе ты будешь манипулировать шириной очень часто.
 
@@ -206,4 +206,4 @@ selector {
 
 🛠 Не стоит совместно использовать и `max-width`, и `min-width` у одного элемента. Лучше просто написать `width`, будет меньше строк.
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

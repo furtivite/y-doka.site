@@ -1,11 +1,11 @@
 ---
 title: <nav>
 name: nav
-autor: vladimir
-co-autors:
+author: vladimir
+co-authors:
   - grachev
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - тэг
   - тег
@@ -97,17 +97,12 @@ nav {
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max-grachev" data-slug-hash="vwXGpP" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="&amp;lt;nav&amp;gt;">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/vwXGpP">
-  &lt;nav&gt;</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/nav/", "Хлебные крошки", 270 %}
 
 ## В работе
 
-{% include "autors/vladimir/in-work.njk" %}
+{% include "authors/vladimir/in-work.njk" %}
 
 🛠 `<nav>` — это набор функционально важных ссылок по разделам сайта. Важно выделить `<nav>`, чтобы поисковик понял, что находится в этом блоке.
 
-{% include "autors/vladimir/autor.njk" %}
+{% include "authors/vladimir/author.njk" %}

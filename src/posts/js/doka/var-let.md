@@ -1,8 +1,8 @@
 ---
 title: var/let
 name: var-let
-autor: vindi-r
-co-autors:
+author: vindi-r
+co-authors:
 designers:
 contributors:
 summary:
@@ -73,7 +73,7 @@ var a = 10
 
 ## В работе
 
-{% include "autors/vindi-r/in-work.njk" %}
+{% include "authors/vindi-r/in-work.njk" %}
 
 🛠При использовании let будет легче находить ошибки и не допускать такого — будет сразу вылезать ошибка использования переменной, что позволит переписать код правильно.
 
@@ -107,4 +107,4 @@ let a = 10
 console.log(a)
 ```
 
-{% include "autors/vindi-r/autor.njk" %}
+{% include "authors/vindi-r/author.njk" %}

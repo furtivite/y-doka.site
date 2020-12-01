@@ -1,12 +1,12 @@
 ---
 title: <style>
 name: style
-autor: grachev
-co-autors:
+author: grachev
+co-authors:
   - ABatickaya
   - vladimir
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - тэг
   - тег
@@ -66,7 +66,7 @@ summary:
 
 ## Ещё примеры
 
-Попробуем сделать основной заголовок на странице ещё крупнее, зададим шрифты без засечек и тёмно-синий цвет:
+Попробуем сделать основной заголовок на странице ещё крупнее, зададим шрифты без засечек и жёлтый цвет:
 
 ```html
 <!DOCTYPE html>
@@ -76,9 +76,9 @@ summary:
     <title>Кулинаный блог Марфы</title>
     <style type="text/css">
       h1 {
-        font-size: 120%;
-        font-family: Verdana, Arial, Helvetica, sans-serif;
-        color: #333366;
+        font-size: 150%;
+        font-family: Roboto, Arial, sans-serif;
+        color: #ffd829;
       }
     </style>
   </head>
@@ -88,12 +88,7 @@ summary:
 </html>
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max-grachev" data-slug-hash="VRQPvv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="style h1">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/VRQPvv">
-  style h1</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/style/header", "Стилизация заголовка", 160 %}
 
 А в этом примере цвет и фон текста в абзаце будет меняться в зависимости от ширины экрана:
 
@@ -104,15 +99,13 @@ summary:
     <style>
       p {
         color: white;
-        background-color: blue;
-        padding: 5px;
-        border: 1px solid black;
+        background-color: #1a5ad7;
       }
     </style>
     <style media="all and (max-width: 500px)">
       <!-- Будет работать на экранах шириной до 500px -- > p {
-        color: blue;
-        background-color: yellow;
+        color: #ed6742;
+        background-color: #ffd829;
       }
     </style>
   </head>
@@ -122,16 +115,11 @@ summary:
 </html>
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max-grachev" data-slug-hash="zbRNqX" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="style p">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/zbRNqX">
-  style p</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/style/p", "Стилизация параграфа", 90 %}
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠 Многие начинающие разработчики <i>грешат</i> тем, что прописывают стили прямо внутри HTML-разметки при помощи тега `style`. Так делать не нужно.
 
@@ -151,7 +139,7 @@ summary:
 
 🛠 На самом деле тег `<style>` можно размещать вообще в любом месте страницы, не обязательно в `<head>` и это будет работать! Но делать так не стоит 🌚
 
-{% include "autors/vladimir/in-work.njk" %}
+{% include "authors/vladimir/in-work.njk" %}
 
 🛠 Лайфхак: чтобы быстрее загружался сайт, особенно на телефоне или при медленном интернете, нужно тот код, который отвечает за отображение верхней части сайта, вставлять в `<head>` в формате `<style>/* Наш CSS-код */</style>`.
 
@@ -159,4 +147,4 @@ summary:
 
 Больше информации о таком подходе можно найти по запросу «критический CSS».
 
-{% include "autors/grachev/autor.njk" %}
+{% include "authors/grachev/author.njk" %}

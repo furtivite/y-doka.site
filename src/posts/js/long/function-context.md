@@ -1,8 +1,8 @@
 ---
 title: Контекст выполнения функций, this
 name: function-context
-autor: bespoyasov
-co-autors:
+author: bespoyasov
+co-authors:
 designers:
 contributors:
 summary:

@@ -1,8 +1,8 @@
 ---
 title: Promise. Метод finally
 name: promise-finally
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:

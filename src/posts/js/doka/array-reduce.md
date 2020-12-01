@@ -1,8 +1,8 @@
 ---
 title: Array.reduce
 name: array-reduce
-autor: windrushfarer
-co-autors:
+author: windrushfarer
+co-authors:
 designers:
 contributors:
 summary:

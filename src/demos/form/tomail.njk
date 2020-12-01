@@ -1,0 +1,17 @@
+<style>
+  {% include './tomail.css' %}
+</style>
+
+<div class="article__code">
+  <form action="mailto:html@yandex.ru" enctype="text/plain">
+    <div class="form-example">
+      <label for="name">Ваше имя</label>
+      <input type="text" class="input" name="name" id="name" required>
+    </div>
+    <div class="form-example">
+      <label for="order">Что вы хотите заказать?</label>
+      <input type="text" class="input" name="order" id="order" required>
+    </div>
+    <input type="submit" class="button" value="Сделать заказ">
+  </form>
+</div>

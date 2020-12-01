@@ -1,0 +1,34 @@
+<style>
+  {% include './rest.css' %}
+</style>
+
+<div class="article__code">
+  <div class="forms">
+    <!-- Эта форма отправит значение методом GET — мы получим URL с ответом -->
+    <form action="" method="get">
+      <label for="GET-name" class="text-label">Имя первого гостя:</label>
+      <input id="GET-name" class="input" type="text" name="name">
+      <input type="submit" class="button" value="Сохранить">
+    </form>
+
+    <!-- Эта форма отправит данные методом POST -->
+    <form action="" method="post">
+      <label for="POST-name" class="text-label">Имя второго гостя:</label>
+      <input id="POST-name" class="input" type="text" name="name">
+      <input type="submit" class="button" value="Сохранить">
+    </form>
+
+    <!-- Форма с булетами в рамочке -->
+    <form action="" method="post">
+      <fieldset>
+        <legend>Выберите прожарку</legend>
+        <input type="radio" name="level" id="rare">
+        <label for="rare">Rare</label>
+        <input type="radio" name="level" id="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" name="level" id="well">
+        <label for="well">Well Done</label>
+      </fieldset>
+    </form>
+  </div>
+</div>

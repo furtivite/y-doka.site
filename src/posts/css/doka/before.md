@@ -1,8 +1,8 @@
 ---
 title: ::before
 name: before
-autor: ezhkov_d
-co-autors:
+author: ezhkov_d
+co-authors:
 designers:
 contributors:
 summary:
@@ -56,7 +56,7 @@ a::before {
 
 ## В работе
 
-{% include "autors/ezhkov_d/in-work.njk" %}
+{% include "authors/ezhkov_d/in-work.njk" %}
 
 🛠 Псевдоэлемент `::before` очень часто используют для стилизации нестандартных маркеров списка:
 
@@ -75,4 +75,4 @@ a::before {
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/ezhkov_d/autor.njk" %}
+{% include "authors/ezhkov_d/author.njk" %}

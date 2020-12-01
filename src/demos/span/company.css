@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+}
+
+.article__code {
+  background-color: #18191c;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.article__code p {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.article__code .demo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 480px;
+  background: #18191c
+    url("https://y-doka.site/assets/images/posts/span/background.png") no-repeat
+    center / cover;
+  z-index: 0;
+  color: #ffffff;
+}
+
+.article__code .demo-header__title {
+  max-width: 500px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.article__code .demo-header__title-accent {
+  display: block;
+  font-size: 55px;
+  line-height: 58px;
+  font-weight: bold;
+}
+
+.article__code .demo-header__title-accent_color {
+  color: #f498ad;
+  background-color: #ed6742;
+}

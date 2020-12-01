@@ -1,8 +1,8 @@
 ---
 title: Element.addEventListener()
 name: element-addeventlistener
-autor: vindi-r
-co-autors:
+author: vindi-r
+co-authors:
 designers:
 contributors:
 summary:
@@ -58,7 +58,7 @@ elem.addEventListener("click", function (e) {
 
 ## В работе
 
-{% include "autors/vindi-r/in-work.njk" %}
+{% include "authors/vindi-r/in-work.njk" %}
 
 🛠Базовая обработка событий клавиатуры:
 
@@ -77,4 +77,4 @@ elem.addEventListener("click", function (e) {
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/vindi-r/autor.njk" %}
+{% include "authors/vindi-r/author.njk" %}

@@ -1,8 +1,8 @@
 ---
 title: Boolean
 name: boolean
-autor: bespoyasov
-co-autors:
+author: bespoyasov
+co-authors:
 designers:
 contributors:
 summary:

@@ -1,0 +1,20 @@
+<style>
+  {% include './index.css' %}
+</style>
+
+<div class="article__code">
+  <form name="test" method="post" action="input1.php">
+    <p class="description">Текстовое поле в одну строчку:</p>
+    <input type="text" size="40" class="input">
+    <p class="description">Радио-кнопки:</p>
+    <input type="radio" name="browser" value="ie" id="ie"><label for="ie" class="radio-label">Вариант 1</label>
+    <input type="radio" name="browser" value="opera" id="opera"><label for="opera" class="radio-label">Вариант 2</label>
+    <input type="radio" name="browser" value="firefox" id="firefox"><label for="firefox" class="radio-label">Вариант 3</label>
+    <p class="description">Большое текстовое поле:</p>
+    <textarea name="comment" cols="40" rows="3"></textarea>
+    <div class="buttons">
+      <input type="reset" value="Очистить" class="button white">
+      <input type="submit" value="Отправить" class="button black">
+    </div>
+  </form>
+</div>

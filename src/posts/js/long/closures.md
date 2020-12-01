@@ -1,8 +1,8 @@
 ---
 title: Области видимости
 name: closures
-autor: bespoyasov
-co-autors:
+author: bespoyasov
+co-authors:
 designers:
 contributors:
 summary:

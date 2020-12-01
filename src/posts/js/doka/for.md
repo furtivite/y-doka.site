@@ -1,8 +1,8 @@
 ---
 title: for(iterator; condition; action) {}
 name: for
-autor: vindi-r
-co-autors:
+author: vindi-r
+co-authors:
 designers:
 contributors:
 summary:
@@ -92,7 +92,7 @@ for (let i = 0; i < 5; i++) {
 
 ## В работе
 
-{% include "autors/vindi-r/in-work.njk" %}
+{% include "authors/vindi-r/in-work.njk" %}
 
 🛠Необязательно начинать счетчик с нуля. Он может быть равным любому значению. Отсчет с нуля делается для удобства восприятия и облегчения дальнейшего обслуживания кода. Условие проверки так же может быть любым, важно чтобы результат проверки был true или false:
 
@@ -157,4 +157,4 @@ for (let i = 0; i < arr.length; i++) {
 console.log(found)
 ```
 
-{% include "autors/vindi-r/autor.njk" %}
+{% include "authors/vindi-r/author.njk" %}

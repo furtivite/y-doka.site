@@ -1,8 +1,8 @@
 ---
 title: Глобальные атрибуты
 name: global-attrs
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -52,4 +52,4 @@ summary:
 
 На самом деле список универсальных атрибутов чуть шире, но мы приняли решение не указывать в этой статье те атрибуты, у которых плохая поддержка браузерами. Со временем этот список может меняться и дополняться.
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

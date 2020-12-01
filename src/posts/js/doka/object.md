@@ -1,8 +1,8 @@
 ---
 title: Объект
 name: object
-autor: vindi-r
-co-autors:
+author: vindi-r
+co-authors:
 designers:
 contributors:
 summary:
@@ -139,7 +139,7 @@ let cat = {
 
 ## В работе
 
-{% include "autors/vindi-r/in-work.njk" %}
+{% include "authors/vindi-r/in-work.njk" %}
 
 🛠Современные браузеры понимают «короткую» запись объектов. Это нужно для упрощения кода. Гораздо быстрее написать:
 
@@ -291,4 +291,4 @@ console.log(a === b) // true
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/vindi-r/autor.njk" %}
+{% include "authors/vindi-r/author.njk" %}

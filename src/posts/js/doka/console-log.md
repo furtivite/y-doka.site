@@ -1,8 +1,8 @@
 ---
 title: console.log()
 name: console-log
-autor: vindi-r
-co-autors:
+author: vindi-r
+co-authors:
 designers:
 contributors:
 summary:
@@ -51,7 +51,7 @@ console.log(a)
 
 ## В работе
 
-{% include "autors/vindi-r/in-work.njk" %}
+{% include "authors/vindi-r/in-work.njk" %}
 
 В пространстве `console` существуют различные инструменты. Рассмотрим `console.log` и `console.dir`.
 
@@ -83,4 +83,4 @@ console.dir(a)
 
 [https://developer.mozilla.org/en-US/docs/Web/API/Console](https://developer.mozilla.org/en-US/docs/Web/API/Console)
 
-{% include "autors/vindi-r/autor.njk" %}
+{% include "authors/vindi-r/author.njk" %}

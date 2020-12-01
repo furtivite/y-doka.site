@@ -1,8 +1,8 @@
 ---
 title: transition-property
 name: transition-property
-autor: ezhkov_d
-co-autors:
+author: ezhkov_d
+co-authors:
 designers:
 contributors:
 summary:
@@ -67,4 +67,4 @@ transition-property: all;
 
 В реальных проектах не так часто приходится плавно изменять более двух свойств одновременно, поэтому свойство `transition-property` используется довольно редко. В основном переходы стилизуются с использованием комплексного свойства [transition](/posts/css/doka/transition/)
 
-{% include "autors/ezhkov_d/autor.njk" %}
+{% include "authors/ezhkov_d/author.njk" %}

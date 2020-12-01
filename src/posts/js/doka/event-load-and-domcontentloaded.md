@@ -1,8 +1,8 @@
 ---
 title: Событие load и DOMContentLoaded
 name: event-load-and-domcontentloaded
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:
@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 ## В работе
 
-{% include "autors/n_lopin/in-work.njk" %}
+{% include "authors/n_lopin/in-work.njk" %}
 
 🛠 Чаще всего используется `DOMContentLoaded`
 
@@ -62,4 +62,4 @@ window.addEventListener("DOMContentLoaded", function () {
 
 🛠 Событие `load` используется, когда код работает со стилями и другими параметрами отображения. Такой код нужен редко, поэтому и событие используется нечасто.
 
-{% include "autors/n_lopin/autor.njk" %}
+{% include "authors/n_lopin/author.njk" %}

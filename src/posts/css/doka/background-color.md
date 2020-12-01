@@ -1,8 +1,8 @@
 ---
 title: background-color
 name: background-color
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -101,7 +101,7 @@ selector {
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠Если нужна красивая кнопка (`button`), то не забудь \*сбросить\* фон: укажи для `background-color: transparent`. Или тот цвет фона, который нужен по дизайну. По умолчанию у всех кнопок серый фон с приветом из девяностых.
 
@@ -227,4 +227,4 @@ CSS
 
 Для `.header` можно задать любую картинку фоном и поверх неё всегда будет фиолетовый оверлэй 💁‍♀️
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

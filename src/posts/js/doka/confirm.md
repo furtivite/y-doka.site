@@ -1,8 +1,8 @@
 ---
 title: confirm()
 name: confirm
-autor: vindi-r
-co-autors:
+author: vindi-r
+co-authors:
 designers:
 contributors:
 summary:
@@ -71,7 +71,7 @@ if (result === true) {
 
 ## В работе
 
-{% include "autors/vindi-r/in-work.njk" %}
+{% include "authors/vindi-r/in-work.njk" %}
 
 🛠Ниже представлен пример использования `confirm` с самостоятельно созданным диалоговым окном:
 
@@ -82,4 +82,4 @@ if (result === true) {
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/vindi-r/autor.njk" %}
+{% include "authors/vindi-r/author.njk" %}

@@ -1,8 +1,8 @@
 ---
 title: Позиционирование элементов с помощью JS
 name: element-positioning-js
-autor: bespoyasov
-co-autors:
+author: bespoyasov
+co-authors:
 designers:
 contributors:
 summary:

@@ -1,8 +1,8 @@
 ---
 title: Element.click
 name: element-click
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:
@@ -63,7 +63,7 @@ button.addEventListener("click", function (event) {
 
 ## В работе
 
-{% include "autors/n_lopin/in-work.njk" %}
+{% include "authors/n_lopin/in-work.njk" %}
 
 🛠 С кликами есть тонкость. Если пользователь нажал кнопку мыши, увел курсор из элемента и потом кнопку отпустил, то события `click` не произойдет.
 
@@ -71,4 +71,4 @@ button.addEventListener("click", function (event) {
 
 🛠 Некоторые мобильные браузеры (например, Safari Mobile) создают события `click` только на интерактивных элементах — `button`, `a`, `img`, `input` и так далее.
 
-{% include "autors/n_lopin/autor.njk" %}
+{% include "authors/n_lopin/author.njk" %}

@@ -1,8 +1,8 @@
 ---
 title: :first-child / :nth-child / :last-child / :nth-last-child / :only-child
 name: child
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -94,4 +94,4 @@ summary:
 
 💡Не надо стесняться пользоваться [калькулятором NTH](http://www.topdesignagencies.com/nth-test/). Часто не получается сразу в уме составить правильную формулу.
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

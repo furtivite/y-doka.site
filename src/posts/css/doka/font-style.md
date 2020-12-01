@@ -2,8 +2,8 @@
 title: font-style
 name: font-style
 article: post
-autor: grachev
-co-autors:
+author: grachev
+co-authors:
 designers:
 contributors:
 summary:
@@ -84,4 +84,4 @@ HTML
 
 🛠 Браузер Internet Explorer до версии 7.0 включительно не поддерживает значение `inherit`.
 
-{% include "autors/grachev/autor.njk" %}
+{% include "authors/grachev/author.njk" %}

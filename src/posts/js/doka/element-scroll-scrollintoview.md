@@ -1,8 +1,8 @@
 ---
 title: Element.scroll/scrollIntoView
 name: element-scroll-scrollintoview
-autor: vindi-r
-co-autors:
+author: vindi-r
+co-authors:
 designers:
 contributors:
 summary:
@@ -32,7 +32,7 @@ element.scrollIntoView()
 
 ## В работе
 
-{% include "autors/vindi-r/in-work.njk" %}
+{% include "authors/vindi-r/in-work.njk" %}
 
 🛠Ниже вариант использования прокрутки к элементу с различными опциями
 
@@ -43,4 +43,4 @@ element.scrollIntoView()
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/vindi-r/autor.njk" %}
+{% include "authors/vindi-r/author.njk" %}

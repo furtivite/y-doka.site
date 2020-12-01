@@ -1,8 +1,8 @@
 ---
 title: text-transform
 name: text-transform
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -93,7 +93,7 @@ CSS
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠Довольно часто в макетах встречаются пункты меню, написанные заглавными буквами. Не нужно в разметке набирать текст заглавными. Скопируй текст из макета и примени свойство `text-transform`.
 
@@ -144,4 +144,4 @@ CSS
 
 Теперь если даже в меню добавится ещё пара пунктов, то они также будут отображаться заглавными буквами.
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

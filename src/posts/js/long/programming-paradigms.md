@@ -1,8 +1,8 @@
 ---
 title: Парадигмы программирования
 name: programming-paradigms
-autor: bespoyasov
-co-autors:
+author: bespoyasov
+co-authors:
 designers:
 contributors:
 summary:

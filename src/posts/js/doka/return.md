@@ -1,8 +1,8 @@
 ---
 title: return
 name: return
-autor: vindi-r
-co-autors:
+author: vindi-r
+co-authors:
 designers:
 contributors:
 summary:
@@ -107,7 +107,7 @@ alert(a === b)
 
 ## В работе
 
-{% include "autors/vindi-r/in-work.njk" %}
+{% include "authors/vindi-r/in-work.njk" %}
 
 🛠Благодаря return можно использовать результат работы функции где угодно, например в условиях или формировании новых значений. Пример ниже использует функцию с return для проверки условия — действительно ли счет игрока больше 100:
 
@@ -158,4 +158,4 @@ if (s3 > 100) alert("игрок 3 проходит")
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/vindi-r/autor.njk" %}
+{% include "authors/vindi-r/author.njk" %}

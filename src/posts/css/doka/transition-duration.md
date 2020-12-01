@@ -1,8 +1,8 @@
 ---
 title: transition-duration
 name: transition-duration
-autor: ezhkov_d
-co-autors:
+author: ezhkov_d
+co-authors:
 designers:
 contributors:
 summary:
@@ -89,4 +89,4 @@ transition-duration: unset;
 }
 ```
 
-{% include "autors/ezhkov_d/autor.njk" %}
+{% include "authors/ezhkov_d/author.njk" %}

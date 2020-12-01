@@ -1,8 +1,8 @@
 ---
 title: Объектно-ориентированное программирование
 name: oop
-autor: bespoyasov
-co-autors:
+author: bespoyasov
+co-authors:
 designers:
 contributors:
 summary:
@@ -27,7 +27,7 @@ summary:
   - solid
   - srp
   - ocp
-  - lsp 
+  - lsp
   - isp
   - dip
   - зависимости

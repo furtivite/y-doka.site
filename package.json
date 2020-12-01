@@ -1,7 +1,5 @@
 {
-  "name": "Y-DokaSite",
-  "version": "1.0.0",
-  "description": "The russian encyclopedia of web development",
+  "private": true,
   "scripts": {
     "sassWatch": "sass --watch src/assets/styles:dist/assets/styles",
     "sassBuild": "sass src/assets/styles/main.scss:dist/assets/styles/main.css",

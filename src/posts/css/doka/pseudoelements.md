@@ -1,8 +1,8 @@
 ---
 title: Псевдоэлементы
 name: pseudoelements
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors: furtivite
 summary:
@@ -258,7 +258,7 @@ input::placeholder {
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠 Очень интересный и полезный трюк — задавать кастомный счётчик спискам. Бывает необходимость добавить скобки после цифры вместо стандартной точки.
 
@@ -320,4 +320,4 @@ input::placeholder {
 
 Их возможности заслуживают отдельной статьи. Например, такой, которую написал Крис Койер: [https://css-tricks.com/pseudo-element-roundup/](https://css-tricks.com/pseudo-element-roundup/)
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

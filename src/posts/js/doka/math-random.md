@@ -1,8 +1,8 @@
 ---
 title: Math.random()
 name: math-random
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:
@@ -28,7 +28,7 @@ console.log(value) // выведет случайное число
 
 ## В работе
 
-{% include "autors/n_lopin/in-work.njk" %}
+{% include "authors/n_lopin/in-work.njk" %}
 
 🛠Не используй генерацию числа в критичных местах, например для ключа доступа — для этого лучше использовать [Web Cryptography API](https://www.w3.org/TR/WebCryptoAPI/). Он работает медленнее, но криптографически утойчив:
 
@@ -57,4 +57,4 @@ Math.floor(Math.random() * (max - min)) + min // от минимума до ма
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/n_lopin/autor.njk" %}
+{% include "authors/n_lopin/author.njk" %}

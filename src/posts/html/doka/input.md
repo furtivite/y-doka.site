@@ -1,10 +1,10 @@
 ---
 title: <input>
 name: input
-autor: vladimir
-co-autors:
+author: vladimir
+co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - поле ввода
   - элементы формы
@@ -135,12 +135,7 @@ summary:
 </html>
 ```
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="max-grachev" data-slug-hash="ZNVMWN" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ZNVMWN">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/ZNVMWN">
-  ZNVMWN</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/input/", "Различные input", 450 %}
 
 ## В работе
 
@@ -148,4 +143,4 @@ summary:
 
 🛠 Если ты используешь `<input type="radio">`, или `<input type="checkbox">`, можно сами инпуты вообще скрыть: будет так же работать при нажатии на лейбл. Так можно сделать очень красивые чекбоксы и радио-кнопки на чистом CSS. Например, я как-то стилизовал чекбоксы на сайте в стиле классических переключалок из iOS.
 
-{% include "autors/vladimir/autor.njk" %}
+{% include "authors/vladimir/author.njk" %}

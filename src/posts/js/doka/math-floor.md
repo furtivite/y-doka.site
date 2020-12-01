@@ -1,8 +1,8 @@
 ---
 title: Math.floor()
 name: math-floor
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:
@@ -37,7 +37,7 @@ console.log(Math.floor(num)) // 15
 
 ## В работе
 
-{% include "autors/n_lopin/in-work.njk" %}
+{% include "authors/n_lopin/in-work.njk" %}
 
 🛠 Разные виды округления нужны в разных ситуациях:
 

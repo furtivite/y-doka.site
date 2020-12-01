@@ -1,8 +1,8 @@
 ---
 title: visibility
 name: visibility
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -90,4 +90,4 @@ HTML
 </div>
 ```
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

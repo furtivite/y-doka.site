@@ -1,10 +1,10 @@
 ---
 title: <q>
 name: q
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - тэг
   - тег
@@ -66,13 +66,8 @@ summary:
 </p>
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="yLeKovR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="&amp;lt;q&amp;gt; with lang">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/yLeKovR">
-  &lt;q&gt; with lang</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/q/", "Nyan", 290 %}
 
 Обратите внимание, что кавычки в этом примере отличаются от стандартных, они соответствуют тем кавычкам, которые ставятся в латинизированном японском тексте.
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

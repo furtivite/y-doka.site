@@ -1,8 +1,8 @@
 ---
 title: alert()
 name: alert
-autor: vindi-r
-co-autors:
+author: vindi-r
+co-authors:
 designers:
 contributors:
 summary:
@@ -67,7 +67,7 @@ alert({ text: "Some message" }) // [object Object]
 
 ## В работе
 
-{% include "autors/vindi-r/in-work.njk" %}
+{% include "authors/vindi-r/in-work.njk" %}
 
 🛠Ниже представлен пример использования alert() с самостоятельно созданным диалоговым окном:
 
@@ -78,4 +78,4 @@ alert({ text: "Some message" }) // [object Object]
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/vindi-r/autor.njk" %}
+{% include "authors/vindi-r/author.njk" %}

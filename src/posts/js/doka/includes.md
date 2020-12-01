@@ -1,8 +1,8 @@
 ---
 title: includes
 name: includes
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:
@@ -49,7 +49,7 @@ console.log(text.includes("Панда")) // false
 
 ## В работе
 
-{% include "autors/n_lopin/in-work.njk" %}
+{% include "authors/n_lopin/in-work.njk" %}
 
 🛠Используй метод, когда нужно убедиться в том, что объект находится в массиве. Например, чтобы не добавить одно и то же значение дважды.
 
@@ -69,4 +69,4 @@ console.log(phoneContacts.includes({ name: "Мама", lastName: "" }))
 // хотя он выглядит так же как и тот, что в массиве
 ```
 
-{% include "autors/n_lopin/autor.njk" %}
+{% include "authors/n_lopin/author.njk" %}

@@ -1,8 +1,8 @@
 ---
 title: <hidden>
 name: hidden
-autor: ABatickaya
-co-autors:
+author: ABatickaya
+co-authors:
 designers:
 contributors:
 summary:
@@ -64,4 +64,4 @@ HTML
 
 Во всех остальных случаях я бы посоветовала управлять видимостью элемента при помощи CSS-свойств.
 
-{% include "autors/ABatickaya/autor.njk" %}
+{% include "authors/ABatickaya/author.njk" %}

@@ -1,8 +1,8 @@
 ---
 title: Promise
 name: promise
-autor:
-co-autors:
+author:
+co-authors:
 designers:
 contributors:
 summary:

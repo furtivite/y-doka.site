@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.article__code {
+  padding: 5%;
+  background-color: #1a5ad7;
+  text-align: center;
+}
+
+.fit-picture {
+  width: 50%;
+}

@@ -1,8 +1,8 @@
 ---
 title: Преобразование типов
 name: typecasting
-autor: bespoyasov
-co-autors:
+author: bespoyasov
+co-authors:
 designers:
 contributors:
 summary:
@@ -399,4 +399,4 @@ const ticketPrice = {
 console.log(ticketPrice) // $20
 ```
 
-{% include "autors/bespoyasov/autor.njk" %}
+{% include "authors/bespoyasov/author.njk" %}

@@ -1,8 +1,8 @@
 ---
 title: Наследование в CSS
 name: inheritance
-autor: Roman_Ganin
-co-autors:
+author: Roman_Ganin
+co-authors:
 designers:
 contributors:
 summary:
@@ -63,7 +63,7 @@ summary:
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠 Удобно делать всякие трюки, используя `currentColor`. Мы не меняем явно цвет бордера по наведению курсора, но он меняется вслед за `color`.
 
@@ -94,4 +94,4 @@ summary:
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/Roman_Ganin/autor.njk" %}
+{% include "authors/Roman_Ganin/author.njk" %}

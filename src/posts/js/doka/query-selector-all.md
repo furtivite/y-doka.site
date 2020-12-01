@@ -1,8 +1,8 @@
 ---
 title: querySelectorAll
 name: query-selector-all
-autor: N_Lopin
-co-autors:
+author: N_Lopin
+co-authors:
 designers:
 contributors:
 summary:

@@ -1,8 +1,8 @@
 ---
 title: <article>
 name: article
-autor: Roman_Ganin
-co-autors:
+author: Roman_Ganin
+co-authors:
 designers:
 contributors:
 summary:
@@ -57,4 +57,4 @@ summary:
 
 С другой стороны можно представить твит, статью на Хабре или страницу на КиноПоиске, на которой просто написано, что «сериал снят по мотивам серии романов Джорджа Р. Р. Мартина» — тогда каждая из этих публикаций будет уже `<article>`, потому что каждая из них полноценна и самодостаточна по своему содержанию.
 
-{% include "autors/Roman_Ganin/autor.njk" %}
+{% include "authors/Roman_Ganin/author.njk" %}

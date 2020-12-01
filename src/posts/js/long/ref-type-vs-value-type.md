@@ -1,8 +1,8 @@
 ---
 title: Хранение по ссылке vs. по значению
 name: ref-type-vs-value-type
-autor: windrushfarer
-co-autors:
+author: windrushfarer
+co-authors:
 designers:
 contributors:
 summary:
@@ -269,4 +269,4 @@ delete puppy.color
 
 🛠 Популярные в веб-разработке библиотеки `React` и `Redux` сильно завязаны на иммутабельности данных и практически построены на этом.
 
-{% include "autors/windrushfarer/autor.njk" %}
+{% include "authors/windrushfarer/author.njk" %}

@@ -1,8 +1,8 @@
 ---
 title: Array.forEach
 name: array-foreach
-autor: windrushfarer
-co-autors:
+author: windrushfarer
+co-authors:
 designers:
 contributors:
 summary:
@@ -152,4 +152,4 @@ nums.forEach((num, index, arr) => {
 
 ---
 
-{% include "autors/windrushfarer/autor.njk" %}
+{% include "authors/windrushfarer/author.njk" %}

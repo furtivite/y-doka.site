@@ -1,11 +1,11 @@
 ---
 title: <header>
 name: header
-autor: vladimir
-co-autors:
+author: vladimir
+co-authors:
   - ABatickaya
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - тэг
   - тег
@@ -73,19 +73,14 @@ summary:
 </html>
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max-grachev" data-slug-hash="vwKqXN" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="&amp;lt;header&amp;gt;">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/vwKqXN">
-  &lt;header&gt;</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/header/", "Хэдер", 630 %}
 
 ## В работе
 
-{% include "autors/ABatickaya/in-work.njk" %}
+{% include "authors/ABatickaya/in-work.njk" %}
 
 🛠 На главной странице сайта в `header` принято оборачивать первый экран. А вот на внутренних страницах в этот тег лучше обернуть повторяющуюся часть, в которой обычно находятся логотип и навигация по сайту.
 
 Если придерживаться принципа, при котором каждый блок находится в отдельном файле, хедер можно реализовать один раз и вставлять уже готовый элемент на все страницы.
 
-{% include "autors/vladimir/autor.njk" %}
+{% include "authors/vladimir/author.njk" %}

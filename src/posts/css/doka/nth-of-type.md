@@ -1,8 +1,8 @@
 ---
 title: :first-of-type / :nth-of-type / :last-of-type / :nth-last-of-type / :only-of-type
 name: nth-of-type
-autor: Roman_Ganin
-co-autors:
+author: Roman_Ganin
+co-authors:
 designers:
 contributors:
 summary:
@@ -126,4 +126,4 @@ p:nth-of-type(odd) {
 
 🛠 Эти псевдоклассы используются реже, чем [:first-child / :nth-child / :last-child / :nth-last-child](/posts/css/doka/child), но иногда нужно выбрать именно из списка _однотипных_ элементов, а не из всех детей своего родителя.
 
-{% include "autors/Roman_Ganin/autor.njk" %}
+{% include "authors/Roman_Ganin/author.njk" %}

@@ -1,8 +1,8 @@
 ---
 title: Строка
 name: string
-autor: vindi-r
-co-autors:
+author: vindi-r
+co-authors:
 designers:
 contributors:
 summary:
@@ -187,7 +187,7 @@ console.log(correct) // Какова цена помидора? Какого п�
 
 ## В работе
 
-{% include "autors/vindi-r/in-work.njk" %}
+{% include "authors/vindi-r/in-work.njk" %}
 
 🛠При работе с формами и вводом значений следует очищать поля ввода от замыкающих пробелов. Например если в поле ввода e-mail окажутся пробелы по концам — есть шанс что пользователь этого не увидит, а у нас сохранится неправильный адрес почты.
 
@@ -230,4 +230,4 @@ console.log(changedStr) // Помидор - вкусный овощ. Помид�
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-{% include "autors/vindi-r/autor.njk" %}
+{% include "authors/vindi-r/author.njk" %}

@@ -1,10 +1,10 @@
 ---
 title: <textarea>
 name: textarea
-autor: ezhkov_d
-co-autors:
+author: ezhkov_d
+co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - поле ввода многострочного текста
   - элемент формы
@@ -23,11 +23,7 @@ summary:
 </textarea>
 ```
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="ezhkov" data-slug-hash="eYzgwgN" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="&amp;lt;textarea&amp;gt;">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/eYzgwgN">
-  &lt;textarea&gt;</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/textarea/basic", "Обычный textarea", 320 %}
 
 ## Как это понять
 
@@ -63,21 +59,13 @@ summary:
 
 Задаёт ширину поля ввода в символах. Если атрибут задан, то должен иметь значением целое положительное число. Если не задан, то по умолчанию берётся как 20
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="ezhkov" data-slug-hash="YzWNojL" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="&amp;lt;textarea cols&amp;gt;">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/YzWNojL">
-  &lt;textarea cols&gt;</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/textarea/cols", "Textarea - cols", 300 %}
 
 ### `disabled`
 
 Атрибут булевого типа. Если задан, то поле отключается для взаимодействия с пользователем. Если атрибут не задан, то он может быть унаследован у одного из предков (например у контейнера &lt;fieldset> или [&lt;form>](/posts/html/doka/form). Если ни у одного предка вверх по дереву этот атрибут не задан, то поле доступно для редактирования.
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="ezhkov" data-slug-hash="eYzgwqg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="&amp;lt;textarea&amp;gt;">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/eYzgwqg">
-  &lt;textarea&gt;</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/textarea/disabled", "Textarea - disabled", 320 %}
 
 При отправке формы значения из disabled-полей не будут отправлены
 
@@ -89,11 +77,7 @@ summary:
 
 Максимальное число символов в поле (включая пробелы и переводы строк), которое может вводить пользователь. Значением должно быть положительное целое число
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="ezhkov" data-slug-hash="jOrygOb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="&amp;lt;textarea maxlength&amp;gt;">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/jOrygOb">
-  &lt;textarea maxlength&gt;</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/textarea/max", "Textarea - maxlength", 320 %}
 
 ### `minlength`
 
@@ -107,11 +91,7 @@ summary:
 
 Подсказка для пользователя, что вводить в этом поле. Если подсказка должна быть многострочной, то можно прямо в HTML-коде переносить строки
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="ezhkov" data-slug-hash="jOrygBM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="&amp;lt;textarea placeholder&amp;gt;">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/jOrygBM">
-  &lt;textarea placeholder&gt;</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/textarea/placeholder", "Textarea - placeholder", 320 %}
 
 Плейсхолдер должен давать только подсказку о том, как должно заполняться поле. Но это не полноценная замена тегу [&lt;label>](/posts/html/doka/label). Если на дизайне у полей ввода есть только плейсхолдер, но нет лейблов, рекомендуется вернуть дизайн в доработку 😉
 
@@ -127,12 +107,7 @@ summary:
 
 Задаёт высоту поля ввода в строках. Если атрибут задан, то должен иметь значением целое положительное число. Если не задан, то по умолчанию высота задается равной двум строкам.
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="ezhkov" data-slug-hash="xxOrZGR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="&amp;lt;textarea rows&amp;gt;">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/xxOrZGR">
-  &lt;textarea rows&gt;</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/textarea/rows", "Textarea - rows", 320 %}
 
 ### `spellcheck`
 
@@ -158,4 +133,4 @@ summary:
 
 💡По умолчанию поле ввода `<textarea>` может изменять свой размер, если потянуть за нижний правый угол. Это поведение можно изменить, управляя CSS-свойством resize.
 
-{% include "autors/ezhkov_d/autor.njk" %}
+{% include "authors/ezhkov_d/author.njk" %}
