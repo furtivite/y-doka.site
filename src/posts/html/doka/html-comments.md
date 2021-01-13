@@ -1,5 +1,5 @@
 ---
-title: Комментарии в HTML
+title: "Комментарии в HTML"
 name: html-comments
 author: ABatickaya
 co-authors:
@@ -59,7 +59,7 @@ summary:
 
 ```html
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
+<script>
   ;(function (d, w, c) {
     ;(w[c] = w[c] || []).push(function () {
       try {
@@ -77,7 +77,6 @@ summary:
       f = function () {
         n.parentNode.insertBefore(s, n)
       }
-    s.type = "text/javascript"
     s.async = true
     s.src = "https://mc.yandex.ru/metrika/watch.js"
 

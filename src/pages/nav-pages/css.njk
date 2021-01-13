@@ -1,6 +1,6 @@
 ---
 layout: nav-page
-permalink: /posts/css/
+permalink: /css/
 eleventyNavigation:
   key: CSS
 ---
@@ -12,7 +12,7 @@ eleventyNavigation:
       <h3 class="navpage__subtitle">Справочник</h3>
       <ul class="navpage__list">
         {%- for cssDoka in collections.cssDoka -%}
-        <a href="/posts/{{ cssDoka.data.section }}/{{ cssDoka.data.type }}/{{ cssDoka.data.name }}">
+        <a href="/{{ cssDoka.data.section }}/{{ cssDoka.data.type }}/{{ cssDoka.data.name }}">
           <li class="navpage__list-item">{{ cssDoka.data.title }}</li>
         </a>
         {%- endfor -%}
@@ -22,7 +22,7 @@ eleventyNavigation:
       <h3 class="navpage__subtitle">Лонгриды</h3>
       <ul class="navpage__list">
         {%- for cssLong in collections.cssLong -%}
-        <a href="/posts/{{ cssLong.data.section }}/{{ cssLong.data.type }}/{{ cssLong.data.name }}">
+        <a href="/{{ cssLong.data.section }}/{{ cssLong.data.type }}/{{ cssLong.data.name }}">
           <li class="navpage__list-item">{{ cssLong.data.title }}</li>
         </a>
         {%- endfor -%}

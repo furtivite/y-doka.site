@@ -11,7 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.article__code .demo-container {
+.article__code .container {
   padding: 8px 12px;
   background-color: #e6e6e6;
   color: #18191c;

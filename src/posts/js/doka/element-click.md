@@ -1,16 +1,19 @@
 ---
-title: Element.click
+title: "Element.click"
 name: element-click
 author: N_Lopin
 co-authors:
 designers:
 contributors:
+tags:
+  - sprint-4
+  - sprint-6
 summary:
 ---
 
 ## Кратко
 
-[Событие](/posts/js/doka/events/) клика на HTML элементе. Когда юзер кликает мышкой по странице, браузер определяет, на каком элементе произошел клик и создает событие `click`.
+[Событие](/js/doka/events/) клика на HTML элементе. Когда юзер кликает мышкой по странице, браузер определяет, на каком элементе произошел клик и создает событие `click`.
 
 На события можно подписаться и выполнять JavaScript код, когда событие произошло.
 
@@ -18,7 +21,7 @@ summary:
 
 Подписаться на все клики на странице:
 
-```jsx
+```js
 document.addEventListener("click", function () {
   alert("Вы клинкули по странице!")
 })
@@ -26,7 +29,7 @@ document.addEventListener("click", function () {
 
 Подписаться только на клики по кнопке (она должна быть на странице):
 
-```jsx
+```js
 let button = document.getElementsByTagName("button")[0] // получаем кнопку
 
 // навешиваем обработчик на событие клик
@@ -37,7 +40,7 @@ button.addEventListener("click", function () {
 
 ## Как понять
 
-Подробнее о механизме событий читай в статье [«События»](/posts/js/doka/events/).
+Подробнее о механизме событий читай в статье [«События»](/js/doka/events/).
 
 В функцию-обработчик так же передается объект события, который содержит дополнительную информацию о клике. Самые полезные свойства:
 
@@ -46,7 +49,7 @@ button.addEventListener("click", function () {
 
 Чтобы получить доступ к объекту события, функция-обработчик должна принимать на вход параметр:
 
-```jsx
+```js
 button.addEventListener("click", function (event) {
   alert(event.button) // напечатает номер нажатой кнопки мыши
 })

@@ -1,5 +1,5 @@
 ---
-title: :not
+title: ":not"
 name: not
 author: ABatickaya
 co-authors:

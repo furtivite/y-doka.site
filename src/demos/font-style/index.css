@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Задаём курсивное начертание для <p> */
+p {
+  font-style: italic;
+}
+
+/* Оформление */
+body {
+  margin: 0;
+  padding: 5%;
+  background-color: #18191c;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 500;
+}

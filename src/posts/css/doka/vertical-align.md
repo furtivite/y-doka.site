@@ -1,5 +1,5 @@
 ---
-title: vertical-align
+title: "vertical-align"
 name: vertical-align
 author: ABatickaya
 co-authors:
@@ -114,7 +114,7 @@ CSS
 
   Этот пример нужно пояснить. Кажется, что лапки кота — это нижняя часть элемента. Но нет! Взгляни на него через инструменты разработчика:
 
-  ![/assets/images/posts/vertical-align/Untitled.png](/assets/images/posts/vertical-align/Untitled.png)
+  ![Кот через инструменты разработчика](/assets/images/posts/vertical-align/Untitled.png)
 
 - `sub` — удобное значение, если нужно создать нижний индекс. Например, в химических формулах: **H₂O**. Опускает базовую линию так, чтобы элемент опустился до уровня нижнего индекса:
 
@@ -134,7 +134,7 @@ CSS
 
 - `text-bottom` — выравнивает элемент по нижней точке текста с учётом выносных элементов.
 
-  ![/assets/images/posts/vertical-align/Untitled-1.png](/assets/images/posts/vertical-align/Untitled-1.png)
+  ![Кот выравненный по нижней точке текста, с помощью значения text-bottom](/assets/images/posts/vertical-align/Untitled-1.png)
 
     <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="wZXbbJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="wZXbbJ">
       <span>See the Pen <a href="https://codepen.io/solarrust/pen/wZXbbJ">
@@ -144,7 +144,7 @@ CSS
 
 - `text-top` — верхняя часть элемента выравнивается по верхнему краю родителя:
 
-  ![/assets/images/posts/vertical-align/Untitled-2.png](/assets/images/posts/vertical-align/Untitled-2.png)
+  ![Кот выравненный по верхнему краю родителя, с помощью значения text-top](/assets/images/posts/vertical-align/Untitled-2.png)
 
     <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="xezoZo" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="xezoZo">
       <span>See the Pen <a href="https://codepen.io/solarrust/pen/xezoZo">
@@ -157,7 +157,7 @@ CSS
 
 Если указать значение в любых доступных единицах измерения, то положительное значение сдвинет элемент вверх относительно базовой линии, а отрицательно — вниз.
 
-Если указать числовое значение в процентах, то за 0% берётся нижняя граница текста без выносных элементов. То есть аналогично `baseline`. Процент рассчитывается от `line-height` ([line-height]()) родительского элемента.
+Если указать числовое значение в процентах, то за 0% берётся нижняя граница текста без выносных элементов. То есть аналогично `baseline`. Процент рассчитывается от `line-height` ([line-height](/css/doka/line-height/)) родительского элемента.
 
 ## Подсказки
 

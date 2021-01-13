@@ -1,0 +1,5 @@
+body {
+  background-image: url("/assets/images/posts/background-image/background.png");
+  background-color: #09ff00; /* Кислый цвет фона */
+  margin: 0;
+}

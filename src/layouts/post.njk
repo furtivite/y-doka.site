@@ -8,6 +8,22 @@ layout: base
     <span class="article__section">{{ section }}</span>
   </div>
 
+
   {{ content | safe }}
+
+  <!-- issue 335 -->
+  {#
+    {% if contributors | length > 1 %}
+      <div class="article__contributors">
+        {% include 'contributors/contributors-list.njk' %}
+      </div>
+    {% endif%}
+    {% if contributors | length == 1 %}
+      <div class="article__contributors">
+        {% include 'contributors/contributors.njk' %}
+      </div>
+    {% endif%}
+  #}
+  <!-- end -->
   {% include 'feedback-form.njk' %}
 </article>

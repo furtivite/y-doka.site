@@ -1,5 +1,5 @@
 ---
-title: :first-child / :nth-child / :last-child / :nth-last-child / :only-child
+title: ":first-child / :nth-child / :last-child / :nth-last-child / :only-child"
 name: child
 author: ABatickaya
 co-authors:

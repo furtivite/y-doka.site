@@ -1,5 +1,5 @@
 ---
-title: <span>
+title: "<span>"
 name: span
 author: vladimir
 co-authors:
@@ -47,16 +47,16 @@ summary:
 ## Ещё пример
 
 ```html
-<p>
-  <span class="letter">Р</span>азумные люди приспосабливаются к окружающему
-  миру. Неразумные люди приспосабливают мир к себе. Вот почему прогресс
-  определяется действиями неразумных людей.
+<p class="quote__text">
+  <span class="quote__text-letter">Р</span>азумные люди приспосабливаются к
+  окружающему миру. Неразумные люди приспосабливают мир к себе. Вот почему
+  прогресс определяется действиями неразумных людей.
 </p>
-<p class="author">Бернард Шоу</p>
+<p class="quote__author">Бернард Шоу</p>
 ```
 
 ```css
-.letter {
+.quote__text-letter {
   float: left; /* Обтекание символа текстом справа */
   margin-right: 7px; /* Отступ справа */
   color: #ed6742; /* Цвет символа */
@@ -65,7 +65,7 @@ summary:
   line-height: 52px; /* Высота строки */
 }
 
-.author {
+.quote__author {
   padding: 10px 0;
   border-top: 1px solid #ed6742; /* декоративная граница */
   font-style: italic;
@@ -93,13 +93,13 @@ summary:
 HTML
 
 ```html
-<header class="demo-header">
-  <h1 class="demo-header__title">
+<header class="header">
+  <h1 class="header__title">
     We are
-    <span class="demo-header__title-accent demo-header__title-accent_color">
+    <span class="header__title-accent header__title-accent_color">
       the best
     </span>
-    <span class="demo-header__title-accent"> company </span>
+    <span class="header__title-accent"> company </span>
   </h1>
 </header>
 ```
@@ -107,7 +107,7 @@ HTML
 CSS
 
 ```css
-.demo-header {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +117,7 @@ CSS
   color: #ffffff;
 }
 
-.demo-header__title {
+.header__title {
   max-width: 500px;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -130,7 +130,7 @@ CSS
 }
 
 /* задаём стили для текста, который нужно выделить */
-.demo-header__title-accent {
+.header__title-accent {
   display: block; /* перенос на новую строку */
   font-size: 55px;
   line-height: 58px;
@@ -138,7 +138,7 @@ CSS
 }
 
 /* цветовой акцент */
-.demo-header__title-accent_color {
+.header__title-accent_color {
   color: #f498ad;
   background-color: #ed6742;
 }

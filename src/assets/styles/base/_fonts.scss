@@ -1,14 +1,5 @@
-// @font-face {
-//     font-family: 'Noe Display';
-//     font-style: normal;
-//     font-display: swap;
-//     font-weight: 400;
-//     src: local('Noe Display'), local('NoeDisplay-Regular'),
-//         url('/assets/fonts/noe-display-regular.woff2') format('woff2'),
-//         url('/assets/fonts/noe-display-regular.woff') format('woff');
-// }
-
-@import url("//fonts.googleapis.com/css2?family=Inter&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import "https://rsms.me/inter/inter.css";
 
 @font-face {
   font-family: "Menlo";
@@ -16,6 +7,6 @@
   font-display: swap;
   font-weight: 400;
   src: local("Menlo"), local("Menlo-Regular"),
-    url("/assets/fonts/Menlo-Regular.woff") format("woff"),
-    url("/assets/fonts/Menlo-Regular.woff2") format("woff2");
+    url("/assets/fonts/Menlo-Regular.woff2") format("woff2")
+    url("/assets/fonts/Menlo-Regular.woff") format("woff");
 }

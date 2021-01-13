@@ -1,5 +1,5 @@
 ---
-title: opacity
+title: "opacity"
 name: opacity
 author: ABatickaya
 co-authors:
@@ -22,7 +22,7 @@ summary:
 }
 
 .selector {
-  opacity: 0.5; /* элемент полупрозрачный, скозь него видно фон */
+  opacity: 0.5; /* элемент полупрозрачный, сквозь него видно фон */
 }
 
 .selector {
@@ -78,7 +78,7 @@ selector:before {
   bottom: 0;
   background-color: rgb(0 0 0 / 0.5);
   /* или в формате HEX
-	background-color: #00000080; */
+  background-color: #00000080; */
 }
 ```
 

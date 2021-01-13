@@ -19,7 +19,6 @@ form {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
   padding: 30px;
   background-color: #49a16c;
 }
@@ -36,7 +35,7 @@ label {
   margin-bottom: 1em;
 }
 
-.input {
+label + input {
   min-width: 300px;
   padding: 10px 12px;
   border: 1px solid #ffffff;
@@ -47,7 +46,11 @@ label {
   font-weight: 300;
 }
 
-.input:focus {
+label + input:focus {
   border-color: #18191c;
   outline: none;
+}
+
+label input {
+  margin-right: 5px;
 }

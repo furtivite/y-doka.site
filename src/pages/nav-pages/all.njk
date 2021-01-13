@@ -1,0 +1,90 @@
+---
+layout: nav-page
+permalink: /all/
+eleventyNavigation:
+  key: Posts
+---
+
+<div class="container">
+  <div class="navpage__block">
+    <div class="navpage__column">
+      <h2 class="navpage__title">HTML</h2>
+      <h3 class="navpage__subtitle">Справочник</h3>
+      <ul class="navpage__list">
+        {%- for htmlDoka in collections.htmlDoka -%}
+        <li class="navpage__list-item">
+          <a href="/{{ htmlDoka.data.section }}/{{ htmlDoka.data.type }}/{{ htmlDoka.data.name }}">
+            {{ htmlDoka.data.title }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+      <h3 class="navpage__subtitle">Лонгриды</h3>
+      <ul class="navpage__list">
+        {%- for htmlLong in collections.htmlLong -%}
+        <li class="navpage__list-item">
+          <a href="/{{ htmlLong.data.section }}/{{ htmlLong.data.type }}/{{ htmlLong.data.name }}">
+            {{ htmlLong.data.title }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="navpage__column">
+      <h2 class="navpage__title">CSS</h2>
+      <h3 class="navpage__subtitle">Справочник</h3>
+      <ul class="navpage__list">
+        {%- for cssDoka in collections.cssDoka -%}
+        <li class="navpage__list-item">
+          <a href="/{{ cssDoka.data.section }}/{{ cssDoka.data.type }}/{{ cssDoka.data.name }}">
+            {{ cssDoka.data.title }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+      <h3 class="navpage__subtitle">Лонгриды</h3>
+      <ul class="navpage__list">
+        {%- for cssLong in collections.cssLong -%}
+        <li class="navpage__list-item">
+          <a href="/{{ cssLong.data.section }}/{{ cssLong.data.type }}/{{ cssLong.data.name }}">
+            {{ cssLong.data.title }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="navpage__column">
+      <h2 class="navpage__title">JavaScript</h2>
+      <h3>Справочник</h3>
+      <ul class="navpage__list">
+        {%- for jsDoka in collections.jsDoka -%}
+        <li class="navpage__list-item">
+          <a href="/{{ jsDoka.data.section }}/{{ jsDoka.data.type }}/{{ jsDoka.data.name }}">
+            {{ jsDoka.data.title }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+      <h3>Лонгриды</h3>
+      <ul class="navpage__list">
+        {%- for jsLong in collections.jsLong -%}
+        <li class="navpage__list-item">
+          <a href="/{{ jsLong.data.section }}/{{ jsLong.data.type }}/{{ jsLong.data.name }}">
+            {{ jsLong.data.title }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+      <h3>Инструменты</h3>
+      <ul class="navpage__list">
+        {%- for postInTools in collections.jsTools -%}
+        <li class="navpage__list-item">
+          <a href="/{{ postInTools.data.section }}/{{ postInTools.data.type }}/{{ postInTools.data.name }}">
+            {{ postInTools.data.title }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div>

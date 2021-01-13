@@ -1,5 +1,5 @@
 ---
-title: <nav>
+title: "<nav>"
 name: nav
 author: vladimir
 co-authors:

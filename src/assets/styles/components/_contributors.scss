@@ -1,0 +1,169 @@
+.contributors {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar {
+    display: flex;
+    margin-right: 0.875em;
+    width: 2.875em;
+    height: 2.875em;
+    border-radius: 50%;
+
+    &-image {
+      width: 2.875em;
+      height: 2.875em;
+      border-radius: 50%;
+      object-fit: cover;
+      vertical-align: top;
+    }
+
+    &:empty {
+      background-color: #000;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000;
+    font-weight: 500;
+
+    &:visited {
+      color: #000;
+    }
+
+    &:not([href]) {
+      &::after {
+        content: "";
+        display: inline-block;
+        border: 5px solid transparent;
+        border-top: 5px solid black;
+        left: 0.375em;
+        position: relative;
+        top: -0.1875em;
+        vertical-align: bottom;
+      }
+    }
+
+    &--all {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &--small {
+      font-size: 0.875em;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+  }
+
+  &__date {
+    font-size: 0.75em;
+    line-height: 1.5;
+  }
+
+  &__socials {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__social {
+    display: flex;
+
+    & + & {
+      margin-left: 0.8125em;
+    }
+
+    svg {
+      width: 1.5em;
+      height: 1.5em;
+    }
+
+    &--twitter {
+      &:hover,
+      &:focus {
+        svg {
+          fill: #1da1f2;
+        }
+      }
+    }
+
+    &--facebook {
+      &:hover,
+      &:focus {
+        svg {
+          fill: #4267b2;
+        }
+      }
+    }
+
+    &--small {
+      & + & {
+        margin-left: 0.1875em;
+      }
+
+      svg {
+        width: 0.75em;
+        height: 0.75em;
+      }
+    }
+  }
+
+  &__items {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+    margin-left: 3.75em;
+    background-color: #f8f8f8;
+    padding: 0.25em 0.5em;
+    border-radius: 0.1875em;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin: 0;
+    }
+  }
+
+  #contributors_modal_controller {
+    position: absolute;
+    width: 0.0625em;
+    height: 0.0625em;
+    visibility: hidden;
+    opacity: 0;
+
+    &:checked ~ .contributors__items {
+      display: block;
+    }
+
+    &:checked ~ .contributors__box {
+      .contributors__name:not([href])::after {
+        border: 0.3125em solid transparent;
+        border-bottom: 0.3125em solid #000;
+        left: 0.375em;
+        position: relative;
+        top: -0.5em;
+      }
+    }
+  }
+}

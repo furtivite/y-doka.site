@@ -1,5 +1,5 @@
 ---
-title: <footer>
+title: "<footer>"
 name: footer
 author: vladimir
 co-authors:

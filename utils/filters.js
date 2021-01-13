@@ -19,4 +19,29 @@ module.exports = {
     }
     return chars.join("")
   },
+
+  filterPeople: function (contributorsList, filterList) {
+    return contributorsList
+      .filter((contributor) => {
+        const filterListNormalized = [].concat(filterList)
+
+        return filterListNormalized.includes(contributor.fileSlug)
+      })
+      .map((contributor) => {
+        return contributor.data
+      })
+  },
+
+  dropPostsFolder: function (path) {
+    return path.replace(/^\/posts/, "")
+  },
+
+  sortByKey: function (arr, key) {
+    if (!key) {
+      return arr
+    }
+    return arr.sort(({ data: dataA }, { data: dataB }) =>
+      dataA.title.localeCompare(dataB.title)
+    )
+  },
 }

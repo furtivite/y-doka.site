@@ -1,5 +1,5 @@
 ---
-title: Null и undefined
+title: "Null и undefined"
 name: null-undefined
 author: N_Lopin
 co-authors:
@@ -26,7 +26,7 @@ summary:
 
 ### `undefined`
 
-```jsx
+```js
 let name
 console.log(name) // напечатает undefined, потому что значение еще не присвоено
 const workoutsDoneByDays = [true, false, true, true, undefined, false, false]
@@ -35,7 +35,7 @@ let waitingTime = undefined // явно установили значение п
 
 ### `null`
 
-```jsx
+```js
 let pinCode = null // пин-кода нет
 ```
 
@@ -48,7 +48,7 @@ let pinCode = null // пин-кода нет
 
 Сам JavaScript использует `undefined`, чтобы обозначить, что значение не было установлено. Это часто можно наблюдать в функциях, когда не все аргументы передаются при вызове:
 
-```jsx
+```js
 function greet(firstName, lastName) {
   console.log(firstName, lastName)
 }

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&amp;display=swap");
+
+/* Зададим толщину заголовка с помощью слова bold. */
+h1 {
+  font-weight: bold;
+}
+
+/* Обычный текст в абзаце <p> сделаем стандартным normal */
+p {
+  font-weight: normal;
+}
+
+/* В контейнере <div> текст будет средним по жирности между normal и bold */
+div {
+  font-weight: 500;
+}
+
+/* В элементе <span> текст будет на один уровень меньше по жирности,
+чем у родительского элемента, внутри которого он находится */
+span {
+  font-weight: lighter;
+}
+
+/* Оформление */
+body {
+  margin: 0;
+  padding: 5%;
+  background-color: #18191c;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 26px;
+}

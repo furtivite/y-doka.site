@@ -1,5 +1,5 @@
 ---
-title: Element.scroll/scrollTo
+title: "Element.scroll/scrollTo"
 name: element-scroll-scrollto
 author: vindi-r
 co-authors:
@@ -16,7 +16,7 @@ summary:
 
 Для скролла всего окна подойдет такая штука:
 
-```jsx
+```js
 scrollTo(x, y)
 ```
 
@@ -24,7 +24,7 @@ scrollTo(x, y)
 
 Для скролла внутри элемента (например в div) синтаксис немного отличается:
 
-```jsx
+```js
 let elem = document.querySelector("div")
 elem.scrollTo(0, 100) // позиция скролла внутри elem будет на 100 пикселей по оси Y от начала элемента
 ```

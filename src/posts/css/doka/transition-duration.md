@@ -1,5 +1,5 @@
 ---
-title: transition-duration
+title: "transition-duration"
 name: transition-duration
 author: ezhkov_d
 co-authors:
@@ -42,20 +42,20 @@ transition-duration: unset;
 
 Браузер анимирует изменения свойств при выполнении двух условий:
 
-- перечислены свойства, которые нужно анимировать ([transition-property](/posts/css/doka/transition-property/))
+- перечислены свойства, которые нужно анимировать ([transition-property](/css/doka/transition-property/))
 - перечислены времена анимации для этих свойств (`transition-duration`)
 
-В общем случае количество свойств и количество времен должны совпадать и браузер сопоставляет каждое время каждому свойству из списка в [transition-property](/posts/css/doka/transition-property/).
+В общем случае количество свойств и количество времен должны совпадать и браузер сопоставляет каждое время каждому свойству из списка в [transition-property](/css/doka/transition-property/).
 
 ```css
 .box {
   transition-property: color, font-size;
                         |       |
-	transition-duration: .3s,    .5s;
+  transition-duration: .3s,    .5s;
 }
 ```
 
-Если количество свойств не совпадает с количеством времён, то браузер в качестве основного списка использует перечень свойств из [transition-property](/posts/css/doka/transition-property/) и каждому свойству подставляет соответствующее время. Если времён больше, лишние отбрасываются. Если меньше - список времён повторяется:
+Если количество свойств не совпадает с количеством времён, то браузер в качестве основного списка использует перечень свойств из [transition-property](/css/doka/transition-property/) и каждому свойству подставляет соответствующее время. Если времён больше, лишние отбрасываются. Если меньше — список времён повторяется:
 
 ```css
 /* Времён больше. Лишние отбрасываются */
@@ -63,14 +63,14 @@ transition-duration: unset;
 .box {
   transition-property: color, font-size;
                         |       |
-	transition-duration: .3s,    .5s, 1s, 2s;
+  transition-duration: .3s,    .5s, 1s, 2s;
 }
 
 /* Времён меньше. Список повторяется с начала */
 .box {
   transition-property: color, font-size, padding, transform;
                         |       |           |         |
-	transition-duration: .3s,    .5s;     /* .3s       .5s */
+  transition-duration: .3s,    .5s;     /* .3s       .5s */
 }
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: class
+title: "class"
 name: class
 author: ABatickaya
 co-authors:

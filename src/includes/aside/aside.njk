@@ -39,6 +39,12 @@
           {% include "../postlists/js/long.njk" %}
         </details>
         {% endif %}
+        {% if collections.jsTools | length %}
+        <details class="aside__subitem aside__js-tools aside__tools">
+          <summary>Инструменты</summary>
+          {% include "../postlists/js/tools.njk" %}
+        </details>
+        {% endif %}
         <div class="aside__subitem aside__js-doka aside__doka">
           {% include "../postlists/js/doka.njk" %}
         </div>

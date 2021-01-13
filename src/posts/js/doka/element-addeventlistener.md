@@ -1,5 +1,5 @@
 ---
-title: Element.addEventListener()
+title: "Element.addEventListener()"
 name: element-addeventlistener
 author: vindi-r
 co-authors:
@@ -14,7 +14,7 @@ summary:
 
 ## Пример
 
-```jsx
+```js
 let clickHandler = function (event) {
   console.log("произошло событие", event.type)
 }
@@ -30,7 +30,7 @@ elem.addEventListener("click", clickHandler)
 
 Функция может быть объявлена ранее, а может быть и анонимной:
 
-```jsx
+```js
 function handleClickFunction(e) {
   alert("Именованая функция")
 }
@@ -54,7 +54,7 @@ elem.addEventListener("click", function (e) {
 У объекта event есть специальные методы, такие как preventDefault() и stopPropagation(). Остальные методы практически не используются:
 
 - preventDefault позволяет заблокировать стандартное поведение браузера. Например, по клику на ссылке — заблокировать переход по этой ссылке;
-- stopPropaganation позволяет остановить всплытие события по DOM дереву.
+- stopPropagation позволяет остановить всплытие события по DOM дереву.
 
 ## В работе
 

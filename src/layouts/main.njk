@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="{{ meta.lang }}" style="overflow-y:hidden">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="yandex-verification" content="a33683a3bd9dc8c5" />
-    <title>{{ meta.title }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="yandex-verification" content="a33683a3bd9dc8c5">
+  <title>{{ meta.title }}</title>
 
-    <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-    {% include "meta.njk" %}
+  <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+
+  {% include "meta.njk" %}
 </head>
 <body class="mainpage">
+  {% include "counter/yandex-metrika-counter.njk" %}
   {% include "header/mainpage-header.njk" %}
+
   {{ content | safe }}
+
+  <img class="mainpage__mascot"
+    src="/assets/images/mainpage/mascot-doka.svg"
+    alt="Пёс Дока" />
+
   {% include "footer/mainpage-footer.njk" %}
-  <script type="text/javascript" src="{{ 'assets/scripts/main.js' | url }}"></script>
+
+  <script src="{{ 'assets/scripts/main.js' | url }}"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 ---
-title: <link>
+title: "<link>"
 name: link
 author: grachev
 co-authors:

@@ -29,11 +29,11 @@
     &::after {
       content: "";
       display: block;
-      height: 0px;
+      height: 0;
       visibility: hidden;
     }
 
-    @media screen and (max-width: 769px) {
+    @media (max-width: 769px) {
       position: relative;
       top: 0;
       left: 0;
@@ -48,7 +48,7 @@
     max-width: $container-max-width;
     transition: all 0.2s ease-in;
 
-    @media screen and (max-width: 769px) {
+    @media (max-width: 769px) {
       width: 100%;
     }
   }

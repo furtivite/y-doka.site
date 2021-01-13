@@ -1,6 +1,6 @@
 ---
 layout: nav-page
-permalink: /posts/html/doka/
+permalink: /html/doka/
 eleventyNavigation:
   key: htmlDoka
 ---
@@ -12,7 +12,7 @@ eleventyNavigation:
     <div class="navpage__column">
       <ul class="navpage__list">
         {%- for htmlDoka in collections.htmlDoka -%}
-        <a href="/posts/{{ htmlDoka.data.section }}/{{ htmlDoka.data.type }}/{{ htmlDoka.data.name }}">
+        <a href="/{{ htmlDoka.data.section }}/{{ htmlDoka.data.type }}/{{ htmlDoka.data.name }}">
           <li class="navpage__list-item">{{ htmlDoka.data.title }}</li>
         </a>
         {%- endfor -%}

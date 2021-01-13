@@ -1,5 +1,5 @@
 ---
-title: Контекст выполнения функций, this
+title: "Контекст выполнения функций, this"
 name: function-context
 author: bespoyasov
 co-authors:
@@ -23,8 +23,6 @@ summary:
 
 Но чтобы лучше понять, что такое `this` и контекст выполнения в JavaScript, нам потребуется зайти издалека.
 
-## Как понять
-
 Сперва вспомним, как мы в принципе можем выполнить какую-то инструкцию в коде.
 
 Выполнить что-то в JS можно 4 способами:
@@ -34,11 +32,11 @@ summary:
 - Использовав функцию-конструктор;
 - Непрямым вызовом функции.
 
-### Функция
+## Функция
 
 Первый и самый просто способ выполнить что-то — вызвать функцию.
 
-```jsx
+```js
 function hello(whom) {
   console.log(`Hello, ${whom}!`)
 }
@@ -51,19 +49,19 @@ hello("World") // Hello, World!
 
 Когда мы вызываем _функцию_, значением `this` может быть лишь _глобальный объект_ или `undefined` при использовании `'use strict'`.
 
-#### Глобальный объект
+### Глобальный объект
 
 _Глобальный объект_ — это, так скажем, корневой объект в программе.
 
 Если мы запускаем JS-код в браузере, то глобальным объектом будет `window`. Если мы запускаем код в Node-окружении, то `global`.
 
-#### Строгий режим
+### Строгий режим
 
 Можно сказать, что _строгий режим_ — неказистый [способ борьбы с легаси](https://learn.javascript.ru/strict-mode).
 
 Включается строгий режим с помощью директивы `'use strict'` в начале блока, который должен выполняться в строгом режиме:
 
-```jsx
+```js
 function nonStrict() {
   // Будет выполняться в нестрогом режиме.
 }
@@ -77,11 +75,11 @@ function strict() {
 // если указать 'use strict' в начале.
 ```
 
-#### Значение `this`
+### Значение `this`
 
 Вернёмся к `this`. В нестрогом режиме при выполнении в браузере `this` при вызове функции будет равен `window`:
 
-```jsx
+```js
 function whatsThis() {
   console.log(this === window)
 }
@@ -91,7 +89,7 @@ whatsThis() // true
 
 То же — если функция объявлена внутри функции:
 
-```jsx
+```js
 function whatsThis() {
   function whatInside() {
     console.log(this === window)
@@ -105,7 +103,7 @@ whatsThis() // true
 
 И то же — если функция будет анонимной и, например, вызвана немедленно:
 
-```jsx
+```js
 ;(function () {
   console.log(this === window)
 })() // true
@@ -113,7 +111,7 @@ whatsThis() // true
 
 В строгом режиме — значение будет равно `undefined`:
 
-```jsx
+```js
 "use strict"
 
 function whatsThis() {
@@ -123,11 +121,11 @@ function whatsThis() {
 whatsThis() // true
 ```
 
-### Метод объекта
+## Метод объекта
 
 Если функция хранится в объекте — это _метод этого объекта_.
 
-```jsx
+```js
 const user = {
   name: "Alex",
   greet() {
@@ -141,7 +139,7 @@ user.greet() // Hello, my name is Alex
 
 В этом случае значение `this` — этот объект.
 
-```jsx
+```js
 const user = {
   name: "Alex",
   greet() {
@@ -154,7 +152,7 @@ user.greet() // Hello, my name is Alex
 
 Обратите внимание, что если записать функцию в отдельную переменную, `this` переопределится.
 
-```jsx
+```js
 const user = {
   name: "Alex",
   greet() {
@@ -180,7 +178,7 @@ _Конструктор_ — это функция, которую мы испо
 
 Например, если конструктор будет создавать объекты пользователей, мы можем назвать его `User`, а использовать вот так:
 
-```jsx
+```js
 function User() {
   this.name = "Alex"
 }
@@ -193,7 +191,7 @@ firstUser.name === "Alex" // true
 
 В примере с `User` значением `this` будет объект, который конструктор создаёт:
 
-```jsx
+```js
 function User() {
   console.log(this instanceof User) // true
   this.name = "Alex"
@@ -211,7 +209,7 @@ firstUser instanceof User // true
 
 Если расписать все неявные шаги, то:
 
-```jsx
+```js
 function User() {
   // Происходит неявно:
   // this = {};
@@ -223,9 +221,9 @@ function User() {
 }
 ```
 
-То же происходит и в ES6-классах, узнать о них больше можно в [статье про объектно-ориентированное программирование](/posts/js/long/oop).
+То же происходит и в ES6-классах, узнать о них больше можно в [статье про объектно-ориентированное программирование](/js/long/oop).
 
-```jsx
+```js
 class User {
   constructor() {
     this.name = "Alex"
@@ -243,7 +241,7 @@ const firstUser = new User()
 
 При работе с конструкторами легко вызвать их неправильно:
 
-```jsx
+```js
 const firstUser = new User() // Правильно.
 const secondUser = User() // Неправильно,
 // хотя работает будто бы верно.
@@ -251,20 +249,20 @@ const secondUser = User() // Неправильно,
 
 На первый взгляд разницы нет:
 
-```jsx
+```js
 firstUser.name === "Alex" // true
 secondUser.name === "Alex" // true
 ```
 
 Но значение `this` у второго равняется `window`, потому что новый объект не был создан из-за отсутствия `new`:
 
-```jsx
+```js
 secondUser === window // true
 ```
 
 Чтобы не попадаться в такую ловушку, в конструкторе можно прописать проверку на то, что новый объект создан:
 
-```jsx
+```js
 function User() {
   if (!(this instanceof User)) {
     throw Error("Error: Incorrect invocation!")
@@ -278,11 +276,11 @@ const secondUser = User() // Error: Incorrect invocation!
 
 ### Непрямой вызов
 
-_Непрямым вызовом_ называют вызов функций через `[.call()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)` или `[.apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)`.
+_Непрямым вызовом_ называют вызов функций через [`.call()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) или [`.apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply).
 
 Оба первым аргументом принимают `this`. То есть они позволяют настроить контекст снаружи, к тому же — явно.
 
-```jsx
+```js
 function greet() {
   console.log(`Hello, ${this.name}`)
 }
@@ -303,7 +301,7 @@ greet.apply(user2) // Hello, Ivan
 
 Разница между `.call()` и `.apply()` — в том, как они принимают аргументы для самой функции после `this`.
 
-```jsx
+```js
 function greet(greetWord, emoticon) {
   console.log(`${greetWord} ${this.name} ${emoticon}`)
 }
@@ -326,7 +324,7 @@ greet.apply(user2, ["Good morning,", ":-D"]) // Good morning, Ivan :-D
 
 Особняком стоит `.bind()`. Это метод, который позволяет связывать контекст выполнения с функцией, чтобы «заранее и точно» определить, какое именно значение будет у `this`.
 
-```jsx
+```js
 function greet() {
   console.log(`Hello, ${this.name}`)
 }
@@ -345,7 +343,7 @@ greetAlex() // Hello, Alex
 
 Это удобно, когда нам нужно передать в стрелочную функцию, например, родительский контекст без использования `.bind()`.
 
-```jsx
+```js
 function greetWaitAndAgain() {
   console.log(`Hello, ${this.name}!`)
   setTimeout(() => {
@@ -367,7 +365,7 @@ greetWaitAndAgain.call(user)
 
 Гибкий, нефиксированный контекст в JS — это одновременно и удобно и опасно.
 
-Удобно это тем, что мы можем писать очень абстрактные функции, которые будут использовать контекст выполнения, для своей работы. Так мы можем добавиться [полиморфизма](/posts/js/long/oop#полиморфизм).
+Удобно это тем, что мы можем писать очень абстрактные функции, которые будут использовать контекст выполнения, для своей работы. Так мы можем добавиться [полиморфизма](/js/long/oop#полиморфизм).
 
 Однако в то же время гибкий `this` может быть и причиной ошибки, например, если мы используем конструктор без `new`, или просто спутаем контекст выполнения.
 
@@ -377,7 +375,7 @@ greetWaitAndAgain.call(user)
 
 Однако и с контекстом строгий режим позволит раньше обнаружить закравшуюся ошибку. Например:
 
-```jsx
+```js
 // В нестрогом режиме, если мы забудем new,
 // name станет полем на глобальном объекте.
 
@@ -408,7 +406,7 @@ const user = User()
 
 А для защиты «от дурака» желательно ставить проверки внутри конструктора:
 
-```jsx
+```js
 function User() {
   if (!(this instanceof User)) {
     throw Error("Error: Incorrect invocation!")
@@ -426,7 +424,7 @@ const secondUser = User() // Error: Incorrect invocation!
 
 Может случиться так, что при транспиляции, если она настроена неправильно, методы класса не будут распознавать `this`, как экземпляр класса.
 
-```jsx
+```js
 class User {
   name: "Alex"
   greet() {

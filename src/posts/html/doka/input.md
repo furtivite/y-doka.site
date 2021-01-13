@@ -1,10 +1,13 @@
 ---
-title: <input>
+title: "<input>"
 name: input
 author: vladimir
 co-authors:
 designers:
 contributors: skorobaeus
+tags:
+  - sprint-4
+  - sprint-6
 summary:
   - поле ввода
   - элементы формы

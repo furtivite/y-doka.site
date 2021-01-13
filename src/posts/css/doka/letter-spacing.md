@@ -1,12 +1,12 @@
 ---
-title: letter-spacing
+title: "letter-spacing"
 name: letter-spacing
 author: grachev
 co-authors:
   - vladimir
   - ABatickaya
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - letter-spacing
 ---
@@ -53,13 +53,13 @@ letter-spacing: unset;
 Попробуем задать расстояние между символами разными способами:
 
 ```html
-<p class="normal">Стандартное расстояние normal</p>
-<p class="em-wide">Чуть шире, относительно стандартного. Задаём 0.4em</p>
-<p class="em-wider">Ещё шире, относительно стандартного: 1em</p>
+<p class="normal">Стандартное расстояние normal.</p>
+<p class="em-wide">Чуть шире, относительно стандартного. Задаём 0.4em.</p>
+<p class="em-wider">Ещё шире, относительно стандартного: 1em.</p>
 <p class="em-tight">
-  Немного сжимаем с помощью отрицательного значения -0.05em;
+  Немного сжимаем с помощью отрицательного значения -0.05em.
 </p>
-<p class="px-wide">Добавляем по 6px между символами</p>
+<p class="px-wide">Добавляем по 6px между символами.</p>
 ```
 
 ```css
@@ -80,11 +80,7 @@ letter-spacing: unset;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max-grachev" data-slug-hash="BEaZmG" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="letter-spacing">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/BEaZmG">
-  letter-spacing</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/letter-spacing/examples", "Межбуквенное расстояние", 420 %}
 
 ## Подсказки
 
@@ -98,16 +94,11 @@ letter-spacing: unset;
 
 🛠 При вёрстке макета, нарисованного в Фотошоп, у вас могут возникнуть проблемы с `letter-spacing`. Причина в том, что в ФШ используется другая логика для расчёта межбуквенного расстояния.
 
-![/assets/images/posts/letter-spacing/letter-spacing.png](/assets/images/posts/letter-spacing/letter-spacing.png)
+![Межбуквенное расстояние в Фотошопе](/assets/images/posts/letter-spacing/letter-spacing.png)
 
 Если попробовать задать элементу `letter-spacing: 20px`, то получишь следующий результат.
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="YMgKyy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="YMgKyy">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/YMgKyy">
-  YMgKyy</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/letter-spacing/photoshop", "Межбуквенное расстояние, перенесённое из photoshop", 220 %}
 
 Это не совсем то, что нужно. Но как тогда правильно перенести межбуквенное расстояние их ФШ в вёрстку?
 

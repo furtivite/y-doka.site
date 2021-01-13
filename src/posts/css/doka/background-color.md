@@ -1,10 +1,10 @@
 ---
-title: background-color
+title: "background-color"
 name: background-color
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - background-color
 ---
@@ -19,9 +19,11 @@ HTML
 
 ```html
 <div class="parent">
-  <p class="block">Блочный элемент с цветным фоном</p>
+  <p class="block">Розовый — цвет, образующийся ...</p>
 
-  <a href="#" class="link">Строчный элемент с цветным фоном</a>
+  <span class="inline">Жёлтый — самый лёгкий и яркий цвет...</span>
+
+  <div class="inline-block">Зелёный цвет...</div>
 </div>
 ```
 
@@ -37,21 +39,17 @@ CSS
 }
 
 .inline {
-  background-color: rgb(173, 216, 230);
+  background-color: rgb(255, 216, 41);
 }
 
 .inline-block {
   display: inline-block;
   margin-top: 15px;
-  background-color: #90ee90;
+  background-color: #49a16c;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="RdgxGW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RdgxGW">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/RdgxGW">
-  RdgxGW</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/background-color/types", "Фоновый цвет у элементов разных типов", 410 %}
 
 В примере выше показаны блоки всех трёх типов отображения. С фоном для блочных и строчно-блочных элементов проблем не возникает, а вот у строчных элементов видны проблемы.
 
@@ -73,13 +71,13 @@ CSS
 
 ```css
 selector {
-	background-color: black; /* Чёрный */
-	background-color: #FFFFFF; /* Белый */
-	background-color: #FFFFFF80; /* Белый полупрозрачный */
-	background-color: rgb(255, 255, 0); /* Жёлтый */
-	background-color: rgb(255 255 0 / 0.5); /* Жёлтый полупрозрачный */
-	background-color: rgba(0, 0, 0, 0.5) /* Полупрозрачный чёрный */
-	background-color: rgba(0 0 0 / 0.5) /* Полупрозрачный чёрный v.2 */
+  background-color: black; /* Чёрный */
+  background-color: #ffffff; /* Белый */
+  background-color: #ffffff80; /* Белый полупрозрачный */
+  background-color: rgb(255, 255, 0); /* Жёлтый */
+  background-color: rgb(255 255 0 / 0.5); /* Жёлтый полупрозрачный */
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный чёрный */
+  background-color: rgba(0 0 0 / 0.5); /* Полупрозрачный чёрный v.2 */
 }
 ```
 
@@ -123,7 +121,7 @@ CSS
 
 ```css
 .form {
-  background-color: #f1f1f1; /* Фон для всей формы */
+  background-color: #ffd829; /* Фон для всей формы */
 }
 
 .input {
@@ -131,7 +129,7 @@ CSS
 }
 
 .submit {
-  background-color: blue; /* Синий фон для кнопки */
+  background-color: black; /* Чёрный фон для кнопки */
   transition: 0.3s ease-in-out; /* Анимируем всё анимируемое */
 }
 
@@ -140,11 +138,7 @@ CSS
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="aMwqOO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="aMwqOO">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/aMwqOO">
-  aMwqOO</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/background-color/form", "Форма", 130 %}
 
 🛠Если вам нужен градиент, то `background-color` вам не подойдёт. Градиенты можно задать только при помощи `background-image`.
 
@@ -154,12 +148,13 @@ HTML
 
 ```html
 <div class="parent">
-  <span class="bkg"
-    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officia
-    ratione at quibusdam doloribus natus enim? Ipsum dignissimos commodi dolorum
-    numquam, distinctio voluptatem repellat doloribus, corporis nobis cumque,
-    blanditiis molestias.</span
-  >
+  Чем отличается маркер от текстовыделителя?
+  <span class="bkg">
+    Текстовыделительные маркеры заправляются флуоресцентными полупрозрачными
+    чернилами. Они не покрывают поверхность бумаги плотным слоем, не
+    пропускающим свет, как это делают обычные маркеры на водной или спиртовой
+    основе.
+  </span>
 </div>
 ```
 
@@ -173,18 +168,14 @@ CSS
 .bkg {
   font-size: 16px;
   line-height: 1.5;
-  background-color: orange;
-  box-shadow: 0 6px 0 orange; /* Тень для каждой строки, перекрывающая пробел */
+  background-color: #ffd829;
+  box-shadow: 0 6px 0 #ffd829; /* Тень для каждой строки, перекрывающая пробел */
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="eXRVGm" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="eXRVGm">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/eXRVGm">
-  eXRVGm</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/background-color/shadow", "Блок с рваным краем, но без пробела", 120 %}
 
-🛠С помощью полупрозрачного фонового цвета у псевдоэлемента можно создать красивый оверлэй поверх фотографий или фоновых изображений. Это круто потому что фоном можно будет ставить любую фотографию и она в большинстве случаев не будет выбиваться из дизайна.
+🛠С помощью полупрозрачного фонового цвета у псевдоэлемента можно создать красивый оверлей поверх фотографий или фоновых изображений. Это круто, потому что фоном можно будет ставить любую фотографию и она в большинстве случаев не будет выбиваться из дизайна.
 
 HTML
 
@@ -200,8 +191,7 @@ CSS
 .header {
   position: relative; /* Чтобы псевдоэлемент считал своё положение от этого блока */
   z-index: 0;
-  background: url("https://themysteriousworld.com/wp-content/uploads/2017/07/matterhorn-1.jpg")
-    no-repeat center / cover; /* Фоновое изображение на всю ширину и высоту блока */
+  background: url("background.png") no-repeat center / cover; /* Фоновое изображение на всю ширину и высоту блока */
 }
 
 .header:before {
@@ -213,18 +203,13 @@ CSS
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(75, 0, 130, 0.5);
+  background-color: rgba(0, 79, 130, 0.5);
   /* Оверлей поверх картинки с прозрачностью 50% */
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="LaLMBE" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="LaLMBE">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/LaLMBE">
-  LaLMBE</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/background-color/veil", "Цветная вуаль поверх блока", 570 %}
 
-Для `.header` можно задать любую картинку фоном и поверх неё всегда будет фиолетовый оверлэй 💁‍♀️
+Для `.header` можно задать любую картинку фоном и поверх неё всегда будет голубой оверлей 💁‍♀️
 
 {% include "authors/ABatickaya/author.njk" %}

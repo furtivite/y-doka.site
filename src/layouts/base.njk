@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="{{ meta.lang }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ meta.title }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ meta.title }}</title>
 
-    <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
-    {% include "meta.njk" %}
+  <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+
+  {% include "meta.njk" %}
 </head>
 <body>
-    <div hidden>{% iconsprite %}</div>
-    <a href="#main" class="sr-skip-link">skip to main content</a>
+  {% include "counter/yandex-metrika-counter.njk" %}
 
-    <div class="layout" role="document">
-      {% include "aside/aside.njk" %}
-      <main id="main" class="main container" tabindex="-1">
-        {{ content | safe }}
-      </main>
-    </div>
+  <div hidden>{% iconsprite %}</div>
+  <a href="#main" class="sr-skip-link">skip to main content</a>
 
-    <script type="text/javascript" src="{{ '/assets/scripts/main.js' | url }}"></script>
+  <div class="layout" role="document">
+    {% include "aside/aside.njk" %}
+    <main id="main" class="main container" tabindex="-1">
+      {{ content | safe }}
+    </main>
+  </div>
+
+  <script src="{{ '/assets/scripts/main.js' | url }}"></script>
 </body>
 </html>

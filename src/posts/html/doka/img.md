@@ -1,5 +1,5 @@
 ---
-title: <img>
+title: "<img>"
 name: img
 author: grachev
 co-authors:

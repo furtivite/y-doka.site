@@ -3,12 +3,15 @@ const pluginNavigation = require("@11ty/eleventy-navigation")
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation")
 const markdownIt = require("markdown-it")
 const markdownItAnchor = require("markdown-it-anchor")
+const markdownItContainer = require("markdown-it-container")
 
 const filters = require("./utils/filters.js")
 const transforms = require("./utils/transforms.js")
 const shortcodes = require("./utils/shortcodes.js")
 const iconsprite = require("./utils/iconsprite.js")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+
+const callout = require("./utils/markdown/callout")
 
 module.exports = function (config) {
   // Plugins
@@ -43,11 +46,14 @@ module.exports = function (config) {
     html: true,
     breaks: true,
     linkify: true,
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "🔗",
   })
+    .use(markdownItAnchor, {
+      permalink: true,
+      permalinkClass: "direct-link",
+      permalinkSymbol: "🔗",
+    })
+    .use(markdownItContainer, "callout", callout)
+
   config.setLibrary("md", markdownLibrary)
 
   // Layouts
@@ -60,6 +66,23 @@ module.exports = function (config) {
   config.addCollection("searchable", (collection) =>
     collection.getFilteredByGlob("./src/posts/**/*.md")
   )
+
+  // Sortables collections
+  new Array(
+    "htmlDoka",
+    "htmlLong",
+    "cssDoka",
+    "cssLong",
+    "jsDoka",
+    "jsLong",
+    "jsTools"
+  ).forEach((collectionsName) => {
+    config.addCollection(collectionsName, (collection) => {
+      return collection
+        .getFilteredByTag(collectionsName)
+        .sort((a, b) => a.data.title.localeCompare(b.data.title))
+    })
+  })
 
   // Pass-through files
   config.addPassthroughCopy("src/robots.txt")

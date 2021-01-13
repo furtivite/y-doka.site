@@ -1,7 +1,7 @@
 <ul tabindex="-1">
   {%- for htmlLong in collections.htmlLong -%}
     <li>
-      <a href="/posts/{{ htmlLong.data.section }}/{{ htmlLong.data.type }}/{{ htmlLong.data.name }}" class="aside__link">
+      <a href="/{{ htmlLong.data.section }}/{{ htmlLong.data.type }}/{{ htmlLong.data.name }}" class="aside__link">
         {{ htmlLong.data.title }}
       </a>
     </li>

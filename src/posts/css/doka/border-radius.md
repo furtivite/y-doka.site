@@ -1,10 +1,12 @@
 ---
-title: border-radius
+title: "border-radius"
 name: border-radius
 author: ABatickaya
 co-authors:
 designers:
 contributors:
+tags:
+  - sprint-4
 summary:
   - border-radius
 ---
@@ -104,7 +106,7 @@ CSS
   content: attr(data-msg);
   width: 20px; /* равные ширина */
   height: 20px; /* и высота */
-  border-radius: 50%; /* закруглаем углы на 50% */
+  border-radius: 50%; /* закругляем углы на 50% */
   background-color: red;
 }
 ```

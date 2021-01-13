@@ -1,5 +1,5 @@
 ---
-title: text-align
+title: "text-align"
 name: text-align
 author: ABatickaya
 co-authors:
@@ -74,15 +74,23 @@ text-align: unset;
 
 Вот сразу три варианта выравнивания текста внутри контейнера `<div>`. В этом примере мы задаём выравнивание в CSS-стилях, привязывая их к классам `.left`, `.right`, `.center`, так что в HTML остаётся только добавить элементу атрибут класса с нужным именем, вроде `class="left"`:
 
+HTML
+
+```html
+<div class="left">
+  <div class="content">Выравнивание по левому краю</div>
+</div>
+<div class="center">
+  <div class="content">Выравнивание по центру</div>
+</div>
+<div class="right">
+  <div class="content">Выравнивание по правому краю</div>
+</div>
+```
+
 CSS
 
 ```css
-div {
-  border: 1px solid black; /* Параметры рамки */
-  padding: 5px; /* Поля вокруг текста */
-  margin-bottom: 5px; /* Отступ снизу */
-}
-
 .left {
   text-align: left;
 }
@@ -95,38 +103,17 @@ div {
   text-align: center;
 }
 
+div {
+  border: 1px solid;
+  padding: 15px;
+}
+
 .content {
-  width: 75%; /* Ширина слоя */
-  background: #fc0; /* Цвет фона */
+  width: 75%; /* Ширина вложенного контейнера */
 }
 ```
 
-HTML
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>text-align</title>
-  </head>
-  <body>
-    <div class="left">
-      <div class="content">Выравнивание по левому краю</div>
-    </div>
-    <div class="center"><div class="content">Выравнивание по центру</div></div>
-    <div class="right">
-      <div class="content">Выравнивание по правому краю</div>
-    </div>
-  </body>
-</html>
-```
-
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max-grachev" data-slug-hash="NJOaXM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="align">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/NJOaXM">
-  align</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/text-align/", "Выравнивание текста в контейнере", 340 %}
 
 ## В работе
 
@@ -161,35 +148,25 @@ CSS
 .child {
   box-sizing: border-box;
   display: inline-block; /* Меняем отображение на строчно-блочное */
-  width: 100px;
-  height: 100px;
-  padding: 40px;
+  width: 125px;
+  height: 125px;
+  padding: 25px;
   text-align: center; /* Выравниваем текст внутри блоков */
-  border: 1px solid black;
+  font-size: 75px;
+  line-height: 75px;
+  font-weight: bold;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="wZNLYL" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="wZNLYL">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/wZNLYL">
-  wZNLYL</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/text-align/block-align", "Выравнивание инлайн-блочных элементов в контейнере", 200 %}
 
 Добавим элементу `.parent` свойство `text-align: center` и элементы `.child` выровняются по центру родителя:
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="PgVrxg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="PgVrxg">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/PgVrxg">
-  PgVrxg</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/text-align/block-align-2", "Выравнивание по центру инлайн-блочных элементов в контейнере", 200 %}
 
 А если попробовать распределить вложенные элементы равномерно по ширине родителя, задав `text-align: justify`?
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="ExPPwxR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ExPPwxR">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/ExPPwxR">
-  ExPPwxR</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/text-align/block-align-3", "Выравнивание по ширине инлайн-блочных элементов в контейнере", 200 %}
 
 Ожидаемого поведения не получилось, и вот почему 👇
 
@@ -205,11 +182,6 @@ CSS
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="YMBoBO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="YMBoBO">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/YMBoBO">
-  YMBoBO</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/text-align/block-align-4", "Выравнивание по ширине инлайн-блочных элементов в контейнере", 200 %}
 
 {% include "authors/ABatickaya/author.njk" %}

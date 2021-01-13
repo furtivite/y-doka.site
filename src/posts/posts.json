@@ -1,5 +1,6 @@
 {
   "tags": "posts",
   "layout": "post",
-  "article": "post"
+  "article": "post",
+  "permalink": "{{ page.filePathStem | dropPostsFolder }}/index.html"
 }

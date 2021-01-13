@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 .article {
   width: 90%;
   max-width: 900px;
   overflow-x: hidden;
   margin-left: 20px;
   padding-bottom: 2rem;
+  hyphens: auto;
 
-  @media screen and (max-width: 769px) {
+  @media (max-width: 769px) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -28,7 +27,7 @@
     font-size: 3.75rem;
     line-height: 1.2;
 
-    @media screen and (max-width: 425px){
+    @media (max-width: 425px){
       font-size: 2.75rem;
     }
 
@@ -51,6 +50,11 @@
       margin-block-start: 0;
       margin-block-end: 0;
     }
+  }
+
+  &__contributors {
+    margin-top: 42px;
+    margin-bottom: 36px;
   }
 
   &__section {

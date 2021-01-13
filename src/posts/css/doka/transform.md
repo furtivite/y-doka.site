@@ -1,5 +1,5 @@
 ---
-title: transform
+title: "transform"
 name: transform
 author: ezhkov_d
 co-authors:
@@ -110,7 +110,7 @@ transform: translate(10px, 0, 20px);
 
 ## В работе
 
-🛠 Благодаря тому, что трансформации элемента никак не затрагивают соседей, свойство `transform` в сочетании с [transition](/posts/css/doka/transition) активно используется для создания плавных анимаций элемента при наведении, либо при изменении состояния.
+🛠 Благодаря тому, что трансформации элемента никак не затрагивают соседей, свойство `transform` в сочетании с [transition](/css/doka/transition) активно используется для создания плавных анимаций элемента при наведении, либо при изменении состояния.
 
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="ezhkov" data-slug-hash="qBZzorM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="transform scale hover">
   <span>See the Pen <a href="https://codepen.io/ezhkov/pen/qBZzorM">

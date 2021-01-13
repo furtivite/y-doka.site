@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.article__code {
+  padding: 5%;
+  background-color: #18191c;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin: auto;
+}
+
+.dots-icon {
+  flex-grow: 1;
+  transition: fill 0.2s;
+  cursor: pointer;
+  animation: animation 3s infinite alternate;
+}
+
+@keyframes animation {
+  0% {
+    fill: #ffd829;
+  }
+  50% {
+    fill: #ed6742;
+  }
+  100% {
+    fill: #f498ad;
+  }
+}

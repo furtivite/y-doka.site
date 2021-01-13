@@ -1,0 +1,23 @@
+maxerr: false
+spec-char-escape: false
+text-ignore-regex: false
+raw-ignore-regex: false
+attr-name-ignore-regex: false
+id-class-ignore-regex: false
+line-max-len-ignore-regex: false
+rules:
+  indent-width: false # за отступы отвечает editor-config и prettier
+  tag-close: true
+  tag-name-match: true
+  tag-self-close:
+    - true
+    - "never"
+  tag-name-lowercase: true
+  attr-quote-style:
+    - true
+    - "double"
+  attr-validate: true
+  img-req-alt: true
+  img-req-src: true
+  link-req-noopener: true
+  fig-req-figcaption: true

@@ -1,10 +1,10 @@
 ---
-title: width
+title: "width"
 name: width
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - ширина
   - размер
@@ -34,21 +34,17 @@ summary:
 /* Не меняем display для .block, поскольку div уже является блочным */
 
 .block {
-  background-color: #add8e6;
+  background-color: #49a16c;
 }
 
 .inline-block {
   display: inline-block;
-  border: 1px solid gray;
-  background-color: #90ee90;
+  border: 1px solid black;
+  background-color: #1a5ad7;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="eXvOVR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="eXvOVR">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/eXvOVR">
-  eXvOVR</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/width/default", "Ширина блочного и инлайн-блочного элемента", 140 %}
 
 Благодаря фонам можно увидеть, какую ширину имеет каждый из наших элементов.
 
@@ -60,23 +56,19 @@ summary:
 
 ```css
 .block {
-	width: 50%; /* Ограничим ширину до половины окна */
-	background-color: #add8e6;
+  width: 50%; /* Ограничим ширину до половины окна */
+  background-color: #49a16c;
 }
 
 .inline-block {
-	width: 100% /* Сделаем каждый элемент на всю ширину окна */
-	display: inline-block;
-	border: 1px solid gray;
-	background-color: #90ee90;
+  width: 100%; /* Сделаем каждый элемент на всю ширину окна */
+  display: inline-block;
+  border: 1px solid black;
+  background-color: #1a5ad7;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="solarrust" data-slug-hash="xBqKjW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="xBqKjW">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/xBqKjW">
-  xBqKjW</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/width/full", "Ширина инлайн-блочного элемента 100%", 180 %}
 
 ## Как это понять
 
@@ -110,12 +102,7 @@ selector {
 
 💡Ограничив ширину блочного элемента, можно очень просто выровнять его по центру экрана. Для этого пропишем внешний отступ (`margin`) со значениями `0 auto`, где 0 отвечает за отступы сверху и снизу, а ключевое слово `auto` — за боковые отступы.
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="rRyBbp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="rRyBbp">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/rRyBbp">
-  rRyBbp</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/width/auto-margin", "Выравнивание по центру", 110 %}
 
 Именно таким образом принято выравнивать контент сайта по центру окна браузера.
 
@@ -125,7 +112,7 @@ selector {
 
 Свойство `width`, пожалуй, самое часто встречающееся свойство в коде. В работе ты будешь манипулировать шириной очень часто.
 
-🛠 Поскольку строчные (inline) и строчно-блочные (inline-block) элементы подстраиваются по ширине под вложенный контент, то в ситуациях, когда контента внутри нет, ширина такого элемента будет равна нулю. Но часто случается, что нам нужен декоративный элемент. В этом случае без зазрения совести задавай ширину. И не забудь про высоту ([height](/posts/css/doka/height) ).
+🛠 Поскольку строчные (inline) и строчно-блочные (inline-block) элементы подстраиваются по ширине под вложенный контент, то в ситуациях, когда контента внутри нет, ширина такого элемента будет равна нулю. Но часто случается, что нам нужен декоративный элемент. В этом случае без зазрения совести задавай ширину. И не забудь про высоту ([height](/css/doka/height) ).
 
 К примеру, часто декоративные иконки верстаются при помощи фона для элементов `i` или `span`. Поскольку контента по факту в этих элементах нет, их ширина и высота будут равны 0. Пропиши `display` со значением `block` или `inline-block`, задай ширину и высоту иконки и укажи путь до фонового изображения:
 
@@ -142,26 +129,22 @@ selector {
 ...
 
 .card__icon {
-	display: inline-block;
-	width: 56px;
-	height: 56px;
-	background: url('https://yastatic.net/morda-logo/i/services/1/mail.svg') no-repeat center / cover;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background: url('doka-eyes.png') no-repeat center / cover;
 }
 
 ...
 ```
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="Rdpwaw" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Rdpwaw">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/Rdpwaw">
-  Rdpwaw</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/width/icon", "Вёрстка иконки", 290 %}
 
 🛠 Часто начинающие разработчики разбивают текст заголовка или абзаца на строки при помощи тега `br` чтобы было точно, как в макете. В таких случаях стоит помнить, что сайты редко остаются неприкосновенными и чаще всего в процессе жизни сайта тексты на нём меняются многократно. Поэтому нужно писать стили так, чтобы любой текст, вставленный в блок, выглядел хорошо.
 
 **Пример макета:**
 
-![/assets/images/posts/width/width.png](/assets/images/posts/width/width.png)
+![Пример макета](/assets/images/posts/width/width.png)
 
 **Как не надо делать:**
 
@@ -181,7 +164,7 @@ selector {
 ```html
 ...
 <p class="card__text">
-  Get the official status of an agent in the project name and earn with us.
+  Get the official status of an agent in the projectname and earn with us.
 </p>
 ...
 ```
@@ -189,18 +172,13 @@ selector {
 ```css
 ...
 .card__text {
-	max-width: 65%;
-	margin: 0 auto; /* Для выравнивания по центру */
+  max-width: 65%;
+  margin: 0 auto; /* Для выравнивания по центру */
 }
 ...
 ```
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="solarrust" data-slug-hash="GeWRyq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="GeWRyq">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/GeWRyq">
-  GeWRyq</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/width/text", "Перенос текста", 330 %}
 
 Теперь любой текст будет занимать не больше, чем 65% от ширины карточки 🎉
 

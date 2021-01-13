@@ -1,12 +1,12 @@
 ---
-title: font-weight
+title: "font-weight"
 name: font-weight
 author: grachev
 co-authors:
   - ABatickaya
   - vladimir
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - font-weight
 ---
@@ -70,61 +70,51 @@ font-weight: unset;
 HTML
 
 ```html
-<h1>
-  Шрифт этого заголовка — жирный. Мы задали его с помощью ключевого слова bold.
-  В цифровом значении он равен 700 единицам.
-</h1>
+<body>
+  <h1>Шрифт этого заголовка — жирный. Мы задали его с помощью ключевого слова bold.
+  В цифровом значении он равен 700 единицам.</h1>
 
-<p>
-  Это текст стандартной толщины внутри контейнера "p". Он эквивалентен 400
-  единицам толщины.
-</p>
+  <p> Это текст стандартной толщины внутри контейнера <p>.
+  Он эквивалентен 400 единицам толщины.</p>
 
-<div>
-  Это текст внутри контейнера "div" — и он чуть толще, чем стандартный normal,
-  но тоньше, чем bold. Мы задали его насыщенность с помощью значения 500.<br />
-  <span
-    >В контейнере "span" шрифт тоньше, чем в "div", внутри которого он
-    находится. Его мы задали через с помощью значения lighter.</span
-  >
-</div>
+  <div>
+    Это текст внутри контейнера <div> — и он чуть толще, чем стандартный normal,
+    но тоньше, чем bold. Мы задали его насыщенность с помощью значения 500.<br />
+    <span>В контейнере <span> шрифт тоньше, чем в <div>, внутри которого он находится.
+    Его мы задали с помощью значения lighter.</span>
+  </div>
+</body>
 ```
 
 CSS
 
 ```css
+body {
+  font-family: "Roboto", sans-serif;
+}
 /* Зададим толщину заголовка с помощью слова bold. */
 h1 {
-  font-family: "Helvetica Neue", "PT Sans", "Arial", serif;
   font-weight: bold;
 }
 
 /* Обычный текст в абзаце <p> сделаем стандартным normal */
 p {
-  font-family: "Helvetica Neue", "PT Sans", "Arial", serif;
   font-weight: normal;
 }
 
 /* В контейнере <div> текст будет средним по жирности между normal и bold */
 div {
-  font-family: "Helvetica Neue", "PT Sans", "Arial", serif;
   font-weight: 500;
 }
 
 /* В элементе <span> текст будет на один уровень меньше по жирности,
 чем у родительского элемента, внутри которого он находится */
 span {
-  font-family: "Helvetica Neue", "PT Sans", "Arial", serif;
   font-weight: lighter;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="max-grachev" data-slug-hash="MRWpNV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="font-weight">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/MRWpNV">
-  font-weight</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/font-weight/", "Насыщенность шрифта", 220 %}
 
 ## В работе
 

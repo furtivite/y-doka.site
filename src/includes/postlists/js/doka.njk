@@ -1,7 +1,7 @@
 <ul tabindex="-1">
   {%- for jsDoka in collections.jsDoka -%}
     <li>
-        <a href="/posts/{{ jsDoka.data.section }}/{{ jsDoka.data.type }}/{{ jsDoka.data.name }}" class="aside__link">
+        <a href="/{{ jsDoka.data.section }}/{{ jsDoka.data.type }}/{{ jsDoka.data.name }}" class="aside__link">
           {{ jsDoka.data.title }}
         </a>
     </li>

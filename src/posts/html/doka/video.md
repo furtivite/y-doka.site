@@ -1,5 +1,5 @@
 ---
-title: <video>
+title: "<video>"
 name: video
 author: vladimir
 co-authors:
@@ -103,14 +103,9 @@ summary:
 HTML
 
 ```html
-<video
-  controls
-  src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
-  poster="big_buck_bunny.jpg"
-  width="580"
->
+<video controls src="frontend.mp4" poster="frontend.jpg" width="580">
   Простите, но ваш браузер не поддерживает встроенные видео. Попробуйте скачать
-  его <a href="https://archive.org/details/BigBuckBunny_124">по этой ссылке</a>
+  его <a href="frontend.mp4">по этой ссылке</a>
   и открыть его на своём устройстве.
 </video>
 ```
@@ -122,19 +117,10 @@ HTML
 HTML
 
 ```html
-<video width="580" controls poster="elephants_dream.jpg">
-  <source
-    src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4"
-    type="video/mp4"
-  />
-  <source
-    src="https://archive.org/download/ElephantsDream/ed_hd.ogv"
-    type="video/ogg"
-  />
-  <source
-    src="https://archive.org/download/ElephantsDream/ed_hd.avi"
-    type="video/avi"
-  />
+<video width="580" controls poster="cinema-vs-reality.jpg">
+  <source src="cinema-vs-reality.mp4" type="video/mp4" />
+  <source src="cinema-vs-reality.ogv" type="video/ogg" />
+  <source src="cinema-vs-reality.avi" type="video/avi" />
   Ваш браузер не поддерживает встроенные видео.
 </video>
 ```
@@ -149,11 +135,11 @@ HTML
 
 ```html
 <video autoplay muted loop class="background-video">
-  <source src="storm.mkv" type="video/mp4" />
+  <source src="storm.mp4" type="video/mp4" />
 </video>
 <div class="content">
-  <h1>Heading</h1>
-  <p>Lorem ipsum...</p>
+  <h1>Банановый эквивалент</h1>
+  <p>Мы живем в радиоактивном мире. Это нормально?</p>
 </div>
 ```
 

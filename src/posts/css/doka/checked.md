@@ -1,10 +1,10 @@
 ---
-title: :checked
+title: ":checked"
 name: checked
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - псевдокласс
   - :checked
@@ -12,7 +12,7 @@ summary:
 
 ## Кратко
 
-Псевдокласс, который активизируется когда пользователь отмечает чекбокс или выбирает одну из радио-кнопок.
+Псевдокласс, который активизируется, когда пользователь отмечает чекбокс или выбирает одну из радио-кнопок.
 
 С его помощью удобно стилизовать эти элементы в их активном состоянии.
 
@@ -28,27 +28,23 @@ summary:
 ```
 
 ```css
-/* розовая обводка в дефолтном состоянии */
+/* белая обводка в дефолтном состоянии */
 input[type="checkbox"] {
-  outline: 2px solid pink;
+  outline: 2px solid #ffffff;
 }
 
-/* обводка становится зелёной когда четбокс кликнули */
+/* обводка становится синей, когда чекбокс кликнули */
 input[type="checkbox"]:checked {
-  outline: 2px solid green;
+  outline: 2px solid #1a5ad7;
 }
 
-/* цвет текста меняется на красны */
+/* цвет текста меняется тоже на синий */
 input[type="checkbox"]:checked ~ .input-text {
-  color: red;
+  color: #1a5ad7;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="xxVEqWj" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title=":checked">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/xxVEqWj">
-  :checked</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/checked/check", "Чекбоксы", 250 %}
 
 ## Как пишется
 
@@ -72,11 +68,58 @@ input[type="checkbox"]:checked ~ .input-text {
 
 Например, вот это выпадающее меню реализовано на чистом HTML с использованием трюка в чекбоксом.
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="WNwGpPG" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Dropdown menu with checkbox">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/WNwGpPG">
-  Dropdown menu with checkbox</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+HTML
+
+```html
+<div class="dropdown">
+  <input type="checkbox" id="menu" />
+  <label for="menu">Выбери меня</label>
+  <ul>
+    <li><a href="#">Леонардо</a></li>
+    <li><a href="#">Рафаэль</a></li>
+    <li><a href="#">Донателло</a></li>
+    <li><a href="#">Микеланджело</a></li>
+  </ul>
+</div>
+```
+
+CSS
+
+```css
+.dropdown {
+  position: relative; /* Относительное позиционирование */
+}
+
+.dropdown input,
+.dropdown ul {
+  display: none; /* Прячем */
+}
+
+.dropdown label {
+  cursor: pointer; /* Вид курсора */
+  border-bottom: 3px dashed #1a5ad7; /* Пунктир снизу */
+}
+
+.dropdown ul {
+  position: absolute; /* Абсолютное позиционирование */
+  left: 0;
+  top: 1.4em; /* Положение меню */
+  margin: 0;
+  padding: 5px; /* Убираем отступы и поля */
+  list-style: none; /* Убираем маркеры списка */
+  background: #1a5ad7; /* Цвет фона */
+  font-size: 20px;
+}
+
+.dropdown a {
+  color: #fff; /* Цвет ссылок */
+}
+
+.dropdown :checked ~ ul {
+  display: inline-block; /* Показываем меню */
+}
+```
+
+{% demo "/checked/choose", "Выпадающее меню", 230 %}
 
 {% include "authors/ABatickaya/author.njk" %}

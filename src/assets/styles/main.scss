@@ -11,6 +11,7 @@
 @import "utils/mixins";
 @import "utils/dark-theme";
 @import "utils/prism";
+@import "utils/prism-okaidia";
 
 //--------------------
 // BASE MODULES
@@ -23,7 +24,6 @@
 @import "base/layout";
 @import "base/typography";
 @import "base/focus";
-@import "base/utilities";
 @import "base/screenreader";
 @import "base/animation";
 @import "base/mainpage";
@@ -45,3 +45,6 @@
 @import "components/feedback-form";
 @import "components/vendor";
 @import "components/demo";
+@import "components/contributors";
+@import "components/callout";
+@import "components/not-found";

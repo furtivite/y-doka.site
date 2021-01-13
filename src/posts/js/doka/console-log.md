@@ -1,5 +1,5 @@
 ---
-title: console.log()
+title: "console.log()"
 name: console-log
 author: vindi-r
 co-authors:
@@ -18,7 +18,7 @@ summary:
 
 Синтаксис написания крайне прост. `console.log()` выведет в консоль все переданные параметры:
 
-```jsx
+```js
 console.log("hello") // выведет "hello"
 console.log(true, { a: true }, 100) // выведет true {a: true} 100
 ```
@@ -31,7 +31,7 @@ console.log(true, { a: true }, 100) // выведет true {a: true} 100
 
 Открой консоль и сравни:
 
-```jsx
+```js
 let a = { id: 1, value: "one text" }
 alert(a)
 ```
@@ -40,7 +40,7 @@ alert(a)
 
 Другое дело если совершать эти действия в консоли:
 
-```jsx
+```js
 let a = { id: 1, value: "one text" }
 console.log(a)
 ```
@@ -59,7 +59,7 @@ console.log(a)
 
 Но `console.log` показывает содержимое DOM, а не его свойства. Чтобы увидеть свойства DOM элемента необходимо использовать console.dir:
 
-```jsx
+```js
 z = document.createElement("div")
 zz = document.createElement("div")
 zz.appendChild(z)
@@ -71,7 +71,7 @@ console.dir(z)
 
 Если делать `console.log` и `console.dir` простого объекта, то разница минимальна, ребят:
 
-```jsx
+```js
 let a = { cat: "miu", dog: "woof" }
 console.log(a)
 console.dir(a)

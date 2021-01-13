@@ -1,10 +1,10 @@
 ---
-title: background-image
+title: "background-image"
 name: background-image
 author: grachev
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - background-image
 ---
@@ -59,32 +59,16 @@ selector {
 
 Добавим на фон сразу цвет и картинку. Цветной фон появится сразу — браузер делает это моментально, потому что ничего загружать не надо. А вот картинка может грузиться какое-то время, в зависимости от скорости интернета:
 
-HTML
+CSS
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>background-image</title>
-    <style>
-      body {
-        background-image: url(https://static.wixstatic.com/media/f1896a_b6b9266313654dd99ac0bf35ca1e6e6d~mv2_d_3872_2592_s_4_2.jpg/v1/fill/w_725,h_485,al_c,q_90,usm_0.66_1.00_0.01/f1896a_b6b9266313654dd99ac0bf35ca1e6e6d~mv2_d_3872_2592_s_4_2.jpg); /* Адрес фонового изображения */
-        background-color: #09ff00; /* Кислый цвет фона */
-      }
-    </style>
-  </head>
-  <body>
-    <p>...</p>
-  </body>
-</html>
+```css
+body {
+  background-image: url(background.png); /* Адрес фонового изображения */
+  background-color: #09ff00; /* Кислый цвет фона */
+}
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max-grachev" data-slug-hash="xBzGeW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="background-image">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/xBzGeW">
-  background-image</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/background-image/basic", "Фоновый рисунок", 183 %}
 
 Чтобы фоновая картинка отображалась так, как нужно, задай ей параметры с помощью других свойств:
 
@@ -114,40 +98,100 @@ background-image: url("../../media/examples/star.png"),
 
 🛠 Если задаешь фоновую картинку для блока с текстом, то обязательно задавай фоновый цвет.
 
-Почему это важно: если при загрузке страницы картинка будет долго прогружатся или вообще не загрузится, то белый текст будет совершенно не виден. Пользователь потеряет контекст и, вероятнее всего, интерес к вашей странице.
+Почему это важно: если при загрузке страницы картинка будет долго прогружаться или вообще не загрузится, то белый текст будет совершенно не виден. Пользователь потеряет контекст и, вероятнее всего, интерес к вашей странице.
 
 Пример ниже не пустой, но в нём не загрузилась фоновая картинка:
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="rNxxGjK" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="rNxxGjK">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/rNxxGjK">
-  rNxxGjK</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+HTML
+
+```html
+<div class="element">
+  <h1 class="main-title">Фронтенд-блог: чиним вёрстку одной строкой</h1>
+</div>
+```
+
+CSS
+
+```css
+.element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("broken-link-to-image.png");
+}
+
+.main-title {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 3rem;
+}
+```
+
+{% demo "/background-image/fix", "Ошибка загрузки", 260 %}
 
 Чиним одной строкой:
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="ROvXbv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ROvXbv">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/ROvXbv">
-  ROvXbv</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+```css
+.element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("broken-link-to-image.png");
+  background-color: gray;
+}
+```
+
+{% demo "/background-image/fix-2", "Ошибка загрузки", 290 %}
 
 Да, будет не так красиво, как нарисовал дизайнер, но вся информация будет доступна.
 
 🛠 Кроме линейного градиента можно задавать радиальный — круглый — градиент. Для этого нужно написать следующее:
 
+HTML
+
+```html
+<div class="parent">
+  <div class="spread-gradient"></div>
+  <div class="smooth-cirle"></div>
+  <div class="sharp-cirle"></div>
+</div>
+```
+
 CSS
 
 ```css
-background-image: radial-gradient(#e66465, #9198e5);
+.parent {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+  background-color: #1a5ad7;
+}
+
+.spread-gradient,
+.smooth-cirle,
+.sharp-cirle {
+  width: 200px;
+  height: 200px;
+}
+
+.spread-gradient {
+  background-image: radial-gradient(#e6e6e6, #1a5ad7);
+}
+
+.smooth-cirle {
+  background-image: radial-gradient(#e6e6e6, #1a5ad7 70%);
+}
+
+.sharp-cirle {
+  background-image: radial-gradient(#e6e6e6 70%, #1a5ad7 70%);
+}
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="bJzXEV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="bJzXEV">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/bJzXEV">
-  bJzXEV</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/background-image/gradient", "Радиальные градиенты", 120 %}
 
 {% include "authors/vladimir/in-work.njk" %}
 

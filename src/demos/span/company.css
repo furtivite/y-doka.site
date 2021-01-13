@@ -15,7 +15,7 @@ body {
   line-height: 27px;
 }
 
-.article__code .demo-header {
+.article__code .header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ body {
   color: #ffffff;
 }
 
-.article__code .demo-header__title {
+.article__code .header__title {
   max-width: 500px;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -39,14 +39,14 @@ body {
   letter-spacing: 1px;
 }
 
-.article__code .demo-header__title-accent {
+.article__code .header__title-accent {
   display: block;
   font-size: 55px;
   line-height: 58px;
   font-weight: bold;
 }
 
-.article__code .demo-header__title-accent_color {
+.article__code .header__title-accent_color {
   color: #f498ad;
   background-color: #ed6742;
 }

@@ -1,6 +1,6 @@
 ---
 layout: nav-page
-permalink: /posts/js/
+permalink: /js/
 eleventyNavigation:
   key: JavaScript
 ---
@@ -12,7 +12,7 @@ eleventyNavigation:
       <h3 class="navpage__subtitle">Справочник</h3>
       <ul class="navpage__list">
         {%- for jsDoka in collections.jsDoka -%}
-        <a href="/posts/{{ jsDoka.data.section }}/{{ jsDoka.data.type }}/{{ jsDoka.data.name }}">
+        <a href="/{{ jsDoka.data.section }}/{{ jsDoka.data.type }}/{{ jsDoka.data.name }}">
           <li class="navpage__list-item">{{ jsDoka.data.title }}</li>
         </a>
         {%- endfor -%}
@@ -22,8 +22,18 @@ eleventyNavigation:
       <h3 class="navpage__subtitle">Лонгриды</h3>
       <ul class="navpage__list">
         {%- for jsLong in collections.jsLong -%}
-        <a href="/posts/{{ jsLong.data.section }}/{{ jsLong.data.type }}/{{ jsLong.data.name }}">
+        <a href="/{{ jsLong.data.section }}/{{ jsLong.data.type }}/{{ jsLong.data.name }}">
           <li class="navpage__list-item">{{ jsLong.data.title }}</li>
+        </a>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="navpage__column">
+      <h3 class="navpage__subtitle">Инструменты</h3>
+      <ul class="navpage__list">
+        {%- for postTools in collections.jsTools -%}
+        <a href="/{{ postTools.data.section }}/{{ postTools.data.type }}/{{ postTools.data.name }}">
+          <li class="navpage__list-item">{{ postTools.data.title }}</li>
         </a>
         {%- endfor -%}
       </ul>

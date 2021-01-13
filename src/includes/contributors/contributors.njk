@@ -1,0 +1,32 @@
+{% set contributor = collections.people | filterPeople(contributors) | first %}
+
+<div class="contributors">
+  <div class="contributors__box">
+    <div class="contributors__avatar">
+      <a class="contributors__avatar-link" href={{ contributor.url }} target="_blank">
+        <img class="contributors__avatar-image" src={{ contributor.photo }} alt={{ contributor.name }}>
+      </a>
+    </div>
+    <div class="contributors__content">
+      <a class="contributors__name" href={{ contributor.url }} target="_blank">{{ contributor.name }}</a>
+      <span class="contributors__date">20 октября 2020</span>
+    </div>
+
+    {% if contributor.socials %}
+      <div class="contributors__socials">
+        {% for social in contributor.socials %}
+          {% if social.twitter %}
+            <a class="contributors__social contributors__social--twitter" href={{ social.twitter }} target="_blank" aria-label="twitter">
+              {% include '../../assets/icons/twitter.svg' %}
+            </a>
+          {% endif%}
+          {% if social.facebook %}
+            <a class="contributors__social contributors__social--facebook" href={{ social.facebook }} target="_blank" aria-label="facebook">
+              {% include '../../assets/icons/facebook.svg' %}
+            </a>
+          {% endif%}
+        {% endfor %}
+      </div>
+    {% endif%}
+  </div>
+</div>

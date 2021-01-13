@@ -1,5 +1,5 @@
 ---
-title: <div>
+title: "<div>"
 name: div
 author: grachev
 co-authors:
@@ -26,7 +26,7 @@ summary:
 HTML
 
 ```html
-<div class="demo-container">
+<div class="container">
   <p>Привет, мы запихали текст в <div>, а сам контейнер покрасили в серый.</p>
 </div>
 ```
@@ -34,7 +34,7 @@ HTML
 CSS
 
 ```css
-.demo-container {
+.container {
   padding: 8px 12px;
   background-color: #e6e6e6;
   color: #18191c;

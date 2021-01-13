@@ -1,11 +1,11 @@
 ---
-title: font-style
+title: "font-style"
 name: font-style
 article: post
 author: grachev
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - font-style
 ---
@@ -17,18 +17,6 @@ summary:
 ## Пример
 
 Попробуем выделить курсивом текст всего абзаца:
-
-CSS
-
-```css
-h1 {
-  font-family: Verdana, Arial, Helvetica, sans-serif; /* Рубленый шрифт заголовка */
-}
-p {
-  font-family: "Times New Roman", Times, serif; /* Шрифт с засечками */
-  font-style: italic; /* Курсивное начертание */
-}
-```
 
 HTML
 
@@ -42,12 +30,18 @@ HTML
 </body>
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max-grachev" data-slug-hash="BbvJMy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="font-style">
-  <span>See the Pen <a href="https://codepen.io/max-grachev/pen/BbvJMy">
-  font-style</a> by Max Grachev (<a href="https://codepen.io/max-grachev">@max-grachev</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+CSS
+
+```css
+body {
+  font-family: "Roboto", sans-serif; /* Рубленый шрифт */
+}
+p {
+  font-style: italic; /* Курсивное начертание */
+}
+```
+
+{% demo "/font-style/", "Начертание шрифта", 200 %}
 
 ## Как это понять
 

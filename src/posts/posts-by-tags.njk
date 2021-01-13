@@ -1,0 +1,31 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - posts
+    - people
+    - searchable
+permalink: /tags/{{tag}}/
+layout: nav-page
+tags:
+---
+
+{% set taglist = collections[ tag ] %}
+<div class="container">
+  <div class="navpage__block">
+    <div class="navpage__column">
+      <h2 class="navpage__title">{{tag}}</h2>
+      <ul class="navpage__list">
+        {%- for article in taglist | sortByKey('title') -%}
+        <a href="/{{ article.data.section }}/{{ article.data.type }}/{{ article.data.name }}">
+          <li class="navpage__list-item">{{ article.data.title }}</li>
+        </a>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div>
+

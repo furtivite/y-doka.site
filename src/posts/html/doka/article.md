@@ -1,5 +1,5 @@
 ---
-title: <article>
+title: "<article>"
 name: article
 author: Roman_Ganin
 co-authors:

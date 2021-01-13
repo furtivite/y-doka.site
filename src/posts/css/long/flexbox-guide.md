@@ -1,11 +1,13 @@
 ---
-title: Гайд по flexbox
+title: "Гайд по flexbox"
 name: flexbox-guide
 author: ABatickaya
 co-authors:
   - furtivite
 designers:
-contributors:
+contributors: skorobaeus
+tags:
+  - sprint-4
 summary:
   - флексбокс
   - flexbox
@@ -40,22 +42,22 @@ summary:
 - **флекс-контейнер**: элемент, к которому применяется свойство `display: flex`. Вложенные в него элементы начинают подчиняться правилам раскладки флексов.
 - **флекс-элемент**: элемент вложенный, во флекс-контейнер.
 
-![/assets/images/posts/flexbox-guide/flexbox___01.png](/assets/images/posts/flexbox-guide/flexbox___01.png)
+![Пример флекс-контейнера и вложенных в него флекс-элементов](/assets/images/posts/flexbox-guide/flexbox___01.png)
 
 - **основная ось**: основная направляющая флекс-контейнера, вдоль которой располагаются флекс-элементы
 - **дополнительная (побочная, перпендикулярная) ось**: ось, идущая перпендикулярно основной. Позже вы поймёте для чего она нужна.
 
-![/assets/images/posts/flexbox-guide/flexbox___02.png](/assets/images/posts/flexbox-guide/flexbox___02.png)
+![Наглядный вид основной оси и дополнительной оси](/assets/images/posts/flexbox-guide/flexbox___02.png)
 
 - **начало / конец основной оси**: точки в начале и в конце основной оси соответственно. Это пригодится нам для выравнивания флекс-элементов.
 - **начало / конец дополнительной оси**: точки в начале и в конце дополнительной оси соответственно.
 
-![/assets/images/posts/flexbox-guide/flexbox___03.png](/assets/images/posts/flexbox-guide/flexbox___03.png)
+![Наглядный вид начала/конца основной оси и начала/конца дополнительной оси](/assets/images/posts/flexbox-guide/flexbox___03.png)
 
 - **размер по основной оси (основной размер)**: размер флекс-элемента вдоль основной оси. Это может быть ширина или высота в зависимости от направления основной оси.
 - **размер по дополнительной оси (дополнительный размер)**: размер флекс-элемента вдоль дополнительной оси. Это может быть ширина или высота в зависимости от направления дополнительной оси. Этот размер всегда перпендикулярен основному размеру. Если основной размер это ширина, то дополнительный размер это высота и наоборот.
 
-![/assets/images/posts/flexbox-guide/flexbox___04.png](/assets/images/posts/flexbox-guide/flexbox___04.png)
+![Наглядный вид размера по основной оси и по дополнительной оси](/assets/images/posts/flexbox-guide/flexbox___04.png)
 
 ## Свойства флекс-контейнера
 
@@ -97,7 +99,7 @@ summary:
 - `column` — основная ось идёт вертикально сверху вниз, дополнительная ось идёт горизонтально слева направо.
 - `column-reverse` — основная ось идёт вертикально снизу вверх, дополнительная ось идёт горизонтально слева направо.
 
-![/assets/images/posts/flexbox-guide/flexbox___05.png](/assets/images/posts/flexbox-guide/flexbox___05.png)
+![Пример свойства flex-direction](/assets/images/posts/flexbox-guide/flexbox___05.png)
 
 Важный момент: на сайтах с начертанием справа налево, например, на сайте на арабском языке, для значений `row` и `row-reverse` основная ось будет идти в обратном направлении. Для значений `column` и `column-revers` своё направление поменяет дополнительная ось.
 
@@ -116,7 +118,7 @@ summary:
 
 Ещё одно возможное значение — `wrap-reverse` — в этом случае элементы будут располагаться снизу вверх, заполнив собой сперва нижнюю строку, а те, что не влезли, перепрыгнут на строку выше.
 
-![/assets/images/posts/flexbox-guide/flexbox___06.png](/assets/images/posts/flexbox-guide/flexbox___06.png)
+![Пример свойства flex-wrap](/assets/images/posts/flexbox-guide/flexbox___06.png)
 
 ### `flex-flow`
 
@@ -190,12 +192,7 @@ summary:
 
 Вот вам демка чтобы было понятнее. Обратите внимание, что вне зависимости от размера шрифта все блоки выравниваются по нижней линии первой строки.
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="solarrust" data-slug-hash="PoNOyJm" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="PoNOyJm">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/PoNOyJm">
-  PoNOyJm</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/flexbox/", "Ссылка на изображении", 750 %}
 
 ### `align-content`
 
@@ -240,7 +237,7 @@ summary:
 
 Значение задаётся в виде целого отрицательного или положительного числа. Элементы встают по возрастающей.
 
-![/assets/images/posts/flexbox-guide/flexbox___07.png](/assets/images/posts/flexbox-guide/flexbox___07.png)
+![Пример свойства флекс-элементов order](/assets/images/posts/flexbox-guide/flexbox___07.png)
 
 ### `flex-grow`
 
@@ -292,7 +289,7 @@ summary:
 }
 ```
 
-Свойство `flex-basis` указывает на размер элемента до того, как свободное место будет распределено (см. [flex-grow]()).
+Свойство `flex-basis` указывает на размер элемента до того, как свободное место будет распределено (см. [flex-grow](/css/long/flexbox-guide/#flex-grow)).
 
 Значением может быть размер в любых относительных или абсолютных единицах: `20rem`, `5vw`, `250px`. А также можно использовать ключевое слово `auto` (значение по умолчанию). В этом случае при расчёте размера элемента будут приниматься во внимание значения свойств `width` / `max-width` / `min-width` или аналогичные свойства высоты. Зависит от того, в каком направлении идёт основная ось.
 

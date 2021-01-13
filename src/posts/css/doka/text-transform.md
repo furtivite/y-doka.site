@@ -1,5 +1,5 @@
 ---
-title: text-transform
+title: "text-transform"
 name: text-transform
 author: ABatickaya
 co-authors:
@@ -129,7 +129,7 @@ CSS
 ...
 
 .menu-list {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 ...

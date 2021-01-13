@@ -2,7 +2,7 @@ const body = document.querySelector("body")
 const aside = document.querySelector("aside")
 
 function asideMoving() {
-  const arrow = aside.querySelector(".footer__arrow-btn")
+  const arrow = aside.querySelector(".aside__arrow-btn")
   arrow.addEventListener("click", toggleAside)
 }
 
@@ -12,12 +12,13 @@ function toggleAside() {
 
 function asideOpener() {
   let postPath = window.location.pathname.split("/").filter((el) => el)
-  let [tmp, postSection, postType, postName] = postPath
+  let [postSection, postType, postName] = postPath
+  const pageLink = `/${postSection}/${postType}/${postName}`
 
   // TODO: оптимизировать
   aside.querySelector(`.aside__${postSection}`).open = "true"
   aside.querySelector(`.aside__${postSection}-${postType}`).open = "true"
-  aside.querySelector(`[href*="${postName}"]`).classList.add("_active")
+  aside.querySelector(`[href="${pageLink}"]`).classList.add("_active")
   aside
     .querySelector(`[href*="${postName}"]._active`)
     .parentElement.scrollIntoView()

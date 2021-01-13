@@ -1,5 +1,5 @@
 ---
-title: <!DOCTYPE>
+title: "<!DOCTYPE>"
 name: doctype
 author: grachev
 co-authors:

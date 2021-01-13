@@ -1,0 +1,22 @@
+---
+layout: nav-page
+permalink: /js/tools/
+eleventyNavigation:
+  key: jsTools
+---
+
+<div class="container">
+  <h2 class="navpage__title">JavaScript</h2>
+  <h3 class="navpage__subtitle">Инструменты</h3>
+  <div class="navpage__block">
+    <div class="navpage__column">
+      <ul class="navpage__list">
+        {%- for post in collections.jsTools -%}
+        <a href="/{{ post.data.section }}/{{ post.data.type }}/{{ post.data.name }}">
+          <li class="navpage__list-item">{{ post.data.title }}</li>
+        </a>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div>

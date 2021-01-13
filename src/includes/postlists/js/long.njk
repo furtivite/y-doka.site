@@ -1,7 +1,7 @@
 <ul tabindex="-1">
   {%- for jsLong in collections.jsLong -%}
     <li>
-        <a href="/posts/{{ jsLong.data.section }}/{{ jsLong.data.type }}/{{ jsLong.data.name }}" class="aside__link">
+        <a href="/{{ jsLong.data.section }}/{{ jsLong.data.type }}/{{ jsLong.data.name }}" class="aside__link">
           {{ jsLong.data.title }}
         </a>
     </li>

@@ -1,10 +1,10 @@
 ---
-title: ::before
+title: "::before"
 name: before
 author: ezhkov_d
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - :before
   - псевдоэлемент
@@ -12,7 +12,7 @@ summary:
 
 ## Кратко
 
-Когда мы в CSS приписываем `::before` к селектору, то для соответствующего элемента создаётся псевдоэлемент ([Псевдоэлементы](/posts/css/doka/pseudoelements)), который будет являться его самым первым потомком. То есть, прямо совсем самым первым, который находится ДО внутреннего содержимого.
+Когда мы в CSS приписываем `::before` к селектору, то для соответствующего элемента создаётся псевдоэлемент ([Псевдоэлементы](/css/doka/pseudoelements)), который будет являться его самым первым потомком. То есть, прямо совсем самым первым, который находится ДО внутреннего содержимого.
 
 ## Пример
 
@@ -42,17 +42,39 @@ a::before {
 
 Самый простой пример использования `::before` — добавление иконки перед важным текстом:
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="ezhkov" data-slug-hash="BaKLXBv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="pseudoelement before">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/BaKLXBv">
-  pseudoelement before</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+HTML
+
+```html
+<div class="message">
+  <p class="warning">Внимание! Этот абзац является важным предупреждением!</p>
+</div>
+
+<div class="message">
+  <p class="info">Этот абзац является информационным.</p>
+</div>
+```
+
+CSS
+
+```css
+.warning::before {
+  content: "⚠";
+  margin-right: 0.5em;
+}
+
+.info:before {
+  content: "ℹ️";
+  margin-right: 0.5em;
+}
+```
+
+{% demo "/before/icon", "Добавление иконки", 230 %}
 
 ## Подсказки
 
-💡 Не забывайте прописывать свойство [content](/posts/css/doka/content) для псевдоэлемента `::before`. Это самая частая ошибка, из-за которой псевдоэлемент не появляется на странице.
+💡 Не забывайте прописывать свойство [content](/css/doka/content) для псевдоэлемента `::before`. Это самая частая ошибка, из-за которой псевдоэлемент не появляется на странице.
 
-💡 Псевдоэлемент ведёт себя ровно также как любой другой элемент в разметке, подчиняется тем же свойствам и законом. Просто его нет в HTML.
+💡 Псевдоэлемент ведёт себя ровно так же как любой другой элемент в разметке, подчиняется тем же свойствам и законом. Просто его нет в HTML.
 
 ## В работе
 
@@ -60,19 +82,62 @@ a::before {
 
 🛠 Псевдоэлемент `::before` очень часто используют для стилизации нестандартных маркеров списка:
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="ezhkov" data-slug-hash="bGpgxBQ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Псевдоэлемент ::before">
-  <span>See the Pen <a href="https://codepen.io/ezhkov/pen/bGpgxBQ">
-  Псевдоэлемент ::before</a> by Denis Ezhkov (<a href="https://codepen.io/ezhkov">@ezhkov</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+HTML
+
+```html
+<ul>
+  <li>Сделать настоящее тату</li>
+  <li>Посмотреть «Звездные войны»</li>
+  <li>Научиться играть на укулеле</li>
+  <li>Не бриться полгода</li>
+  <li>Поучаствовать в чайной церемонии</li>
+</ul>
+```
+
+CSS
+
+```css
+li::before {
+  content: "💛";
+  margin-right: 5px;
+  vertical-align: middle;
+}
+```
+
+{% demo "/before/list", "Нестандартный маркер", 290 %}
 
 🛠 Пример со свойством `content`:
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="furtivite" data-slug-hash="gOrKXJg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gOrKXJg">
-  <span>See the Pen <a href="https://codepen.io/furtivite/pen/gOrKXJg">
-  gOrKXJg</a> by Egor (<a href="https://codepen.io/furtivite">@furtivite</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+HTML
+
+```html
+<ul>
+  <li>Милый маленький грибочек</li>
+  <li>Сколопендровый листочек</li>
+  <li>Жёлтой пыльки чуть</li>
+</ul>
+```
+
+CSS
+
+```css
+li {
+  position: relative;
+}
+
+li:before {
+  /* не забываем о свойстве content */
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ed6742;
+  position: absolute;
+  left: -25px;
+  top: 5px;
+}
+```
+
+{% demo "/before/empty-content", "Пустое свойство content", 190 %}
 
 {% include "authors/ezhkov_d/author.njk" %}

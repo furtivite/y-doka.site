@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+.parent {
+  background-color: #1a5ad7;
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+.spread-gradient {
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(#e6e6e6, #1a5ad7);
+}
+
+.smooth-cirle {
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(#e6e6e6, #1a5ad7 70%);
+}
+
+.sharp-cirle {
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(#e6e6e6 70%, #1a5ad7 70%);
+}

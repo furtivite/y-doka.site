@@ -1,0 +1,9 @@
+<ul tabindex="-1">
+  {%- for post in collections.jsTools -%}
+    <li>
+        <a href="/{{ post.data.section }}/{{ post.data.type }}/{{ post.data.name }}" class="aside__link">
+          {{ post.data.title }}
+        </a>
+    </li>
+  {%- endfor -%}
+</ul>

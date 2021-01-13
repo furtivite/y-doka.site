@@ -1,5 +1,5 @@
 ---
-title: querySelector
+title: "querySelector"
 name: query-selector
 author: N_Lopin
 co-authors:
@@ -40,7 +40,7 @@ summary:
       </p>
     </div>
     <p>Это параграф, дочерний для body</p>
-    <script type="text/javascript">
+    <script>
       let firstParagraph = document.querySelector("div>p")
       console.log(firstParagraph.textContent) // напечатает текст, начинающийся с "Князь Василий"
 

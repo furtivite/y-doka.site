@@ -1,5 +1,5 @@
 ---
-title: <body>
+title: "<body>"
 name: body
 author: grachev
 co-authors:

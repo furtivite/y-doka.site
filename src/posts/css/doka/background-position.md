@@ -1,10 +1,10 @@
 ---
-title: background-position
+title: "background-position"
 name: background-position
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - background-position
 ---
@@ -13,7 +13,7 @@ summary:
 
 При помощи свойства `background-position` можно управлять положением фоновой картинки внутри элемента.
 
-Если картинка, которая установлена фоном для элемента (свойство [background-image](/posts/css/doka/background-image)) меньше, чем сам этот элемент, и если отключишь автоматическое повторение фона по горизонтали и вертикали ([background-repeat]() ), то по умолчанию фоновая картинка будет располагаться в левом верхнем углу.
+Если картинка, которая установлена фоном для элемента (свойство [background-image](/css/doka/background-image/)) меньше, чем сам этот элемент, и если отключишь автоматическое повторение фона по горизонтали и вертикали ([background-repeat](posts/css/doka/background-repeat/)), то по умолчанию фоновая картинка будет располагаться в левом верхнем углу.
 
 ## Пример
 
@@ -27,18 +27,13 @@ CSS
 
 ```css
 .element {
-  height: 100vh;
-  background-color: #a91517;
-  background-image: url("https://l.imgt.es/resource-preview-imgs/1d9806ec-7ef9-49ea-b60c-f1c9ca956b0a%2Fbaymax.crop_316x237_0%252C26.preview.png?profile=max500x190");
+  background-color: #49a16c;
+  background-image: url("doggo.png");
   background-repeat: no-repeat;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="Ygrypa" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Ygrypa">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/Ygrypa">
-  Ygrypa</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+{% demo "/background-position/not-positioned", "Положение фоновой картинки", 450 %}
 
 Как видно в примере, маленькая картинка с персонажем располагается в левом верхнем углу. Но по логике изображения нам нужно расположить его в правом нижнем углу.
 
@@ -46,18 +41,13 @@ CSS
 
 ```css
 .element {
-	...
-	background-position: 100% 100%; /* Позиция в процентах */
-	background-position: bottom right; /* Или при помощи ключевых слов */
+  ...
+  background-position: 100% 100%; /* Позиция в процентах */
+  background-position: bottom right; /* Или при помощи ключевых слов */
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="eXGpjg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="eXGpjg">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/eXGpjg">
-  eXGpjg</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/background-position/positioned", "Положение фоновой картинки", 450 %}
 
 ## Как это понять
 
@@ -117,7 +107,7 @@ CSS
 
 🛠 В работе редко требуется располагать маленькие фоновые картинки в больших блоках. Сейчас принято делать красивые фоны на всю ширину. Но для любых фонов принято указывать `background-position: center` или `background-position: 50% 50%`. В качестве подстраховки от фатальной поломки вёрстки.
 
-🛠 Можно встретить такую запись `background-position: right 20px bottom 10px;` . В этом случае отступ будет отсчитываться не от верхнего левого угла, а от указанной при помощи ключевого слова стороны. В данном случае картинка будет расположена в 20 пикселях от правого края и в 10 пикселях от нижнего края.
+🛠 Можно встретить такую запись `background-position: right 20px bottom 10px;`. В этом случае отступ будет отсчитываться не от верхнего левого угла, а от указанной при помощи ключевого слова стороны. В данном случае картинка будет расположена в 20 пикселях от правого края и в 10 пикселях от нижнего края.
 
 🛠 Помимо перечисленных [возможных значений]() можно использовать функцию `calc()` для указания более гибкого значения.
 

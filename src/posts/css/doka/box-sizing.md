@@ -1,10 +1,10 @@
 ---
-title: box-sizing
+title: "box-sizing"
 name: box-sizing
 author: ABatickaya
 co-authors:
 designers:
-contributors:
+contributors: skorobaeus
 summary:
   - box-sizing
   - content-box
@@ -40,7 +40,7 @@ CSS
   width: 100px;
   height: 100px;
   padding: 25px;
-  border: 10px solid red;
+  border: 10px solid #ffffff;
 }
 ```
 
@@ -51,21 +51,16 @@ CSS
 ```css
 .first {
   box-sizing: content-box;
-  background-color: #f1f1f1;
+  background-color: #ed6742;
 }
 
 .second {
   box-sizing: border-box;
-  background-color: #bada55;
+  background-color: #f498ad;
 }
 ```
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="solarrust" data-slug-hash="KYeEPQ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="KYeEPQ">
-  <span>See the Pen <a href="https://codepen.io/solarrust/pen/KYeEPQ">
-  KYeEPQ</a> by Alena (<a href="https://codepen.io/solarrust">@solarrust</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{% demo "/box-sizing/", "box-sizing", 260 %}
 
 В итоге элементы получились разного размера! Как так? Мы ведь указали одинаковые ширину, высоту и внутренние отступы, а так же рамку 🤔
 

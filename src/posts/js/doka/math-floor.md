@@ -1,5 +1,5 @@
 ---
-title: Math.floor()
+title: "Math.floor()"
 name: math-floor
 author: N_Lopin
 co-authors:
@@ -13,12 +13,12 @@ summary:
 Объект `Math` содержит набор методов, который используется для округления чисел:
 
 - `round` — округление по обычным правилам;
-- `floor` — окруление вниз;
+- `floor` — округление вниз;
 - `ceil` — округление вверх;
 
 ## Как пишется
 
-```jsx
+```js
 let num = 15.52
 // Обычное округление
 console.log(Math.round(num)) // 16

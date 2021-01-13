@@ -1,5 +1,5 @@
 ---
-title: <button>
+title: "<button>"
 name: button
 author: grachev
 co-authors:

@@ -1,6 +1,6 @@
 ---
 layout: nav-page
-permalink: /posts/html/long/
+permalink: /html/long/
 eleventyNavigation:
   key: htmlLong
 ---
@@ -12,7 +12,7 @@ eleventyNavigation:
     <div class="navpage__column">
       <ul class="navpage__list">
         {%- for htmlLong in collections.htmlLong -%}
-        <a href="/posts/{{ htmlLong.data.section }}/{{ htmlLong.data.type }}/{{ htmlLong.data.name }}">
+        <a href="/{{ htmlLong.data.section }}/{{ htmlLong.data.type }}/{{ htmlLong.data.name }}">
           <li class="navpage__list-item">{{ htmlLong.data.title }}</li>
         </a>
         {%- endfor -%}

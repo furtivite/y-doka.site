@@ -1,0 +1,37 @@
+{% set contributor_list = collections.people | filterPeople(contributors) %}
+
+<div class="contributors">
+  <input type="checkbox" id="contributors_modal_controller">
+  <div class="contributors__box">
+    <div class="contributors__avatar"></div>
+    <div class="contributors__content">
+      <label for="contributors_modal_controller" class="contributors__name contributors__name--all">
+                Несколько авторов
+            </label>
+      <span class="contributors__date">20 октября 2020</span>
+    </div>
+  </div>
+  <ul class="contributors__items">
+    {% for contributor in contributor_list %}
+      <li class="contributors__item">
+        <a class="contributors__name contributors__name--small" href={{ contributor.url }} target="_blank">{{ contributor.name }}</a>
+        {% if contributor.socials %}
+          <div class="contributors__socials">
+            {% for social in contributor.socials %}
+              {% if social.twitter %}
+                <a class="contributors__social contributors__social--small contributors__social--twitter" href={{ social.twitter }} target="_blank" aria-label="twitter">
+                  {% include '../../assets/icons/twitter.svg' %}
+                </a>
+              {% endif%}
+              {% if social.facebook %}
+                <a class="contributors__social contributors__social--small  contributors__social--facebook" href={{ social.facebook }} target="_blank" aria-label="facebook">
+                  {% include '../../assets/icons/facebook.svg' %}
+                </a>
+              {% endif%}
+            {% endfor %}
+          </div>
+        {% endif%}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,5 +1,5 @@
 ---
-title: <script>
+title: "<script>"
 name: script
 author: grachev
 co-authors:

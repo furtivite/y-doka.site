@@ -1,5 +1,5 @@
 ---
-title: Element.scroll/scrollIntoView
+title: "Element.scroll/scrollIntoView"
 name: element-scroll-scrollintoview
 author: vindi-r
 co-authors:
@@ -16,7 +16,7 @@ summary:
 
 Относительный скролл всего окна:
 
-```jsx
+```js
 let element = document.querySelector("#about") // в element Должен быть любой DOM элемент на странице
 element.scrollIntoView()
 ```

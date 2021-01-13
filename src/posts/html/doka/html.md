@@ -1,5 +1,5 @@
 ---
-title: <html>
+title: "<html>"
 name: html
 author: grachev
 co-authors:
